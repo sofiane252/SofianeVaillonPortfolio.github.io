@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <meta name="generator" content="Mahara 22.10 (https://mahara.org)">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="SAÉ s2.126">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+
+    <meta name="author" content="SOFIANE VAILLON">
+    <title>SAÉ s2.126</title>
+    <script>
+    var config = {
+        'theme': [],
+        'sesskey' : '9197b9dc0ef14482',
+        'wwwroot': 'https://mahara-info.iut-bm.univ-fcomte.fr/',
+        'loggedin': 1,
+        'userid': 122,
+        'cc_enabled': 0,
+        'mathjax': 0,
+        'select2_lang': '',
+        'maxuploadsize': '2097152',
+        'maxuploadsizepretty': '2Mo'
+    };
+    </script>
+    <script>var strings = {"confirmcopytitle":"Confirmer la copie","confirmcopydesc":"Veuillez s\u00e9lectionner la destination de la copie :","View":"Page","Collection":"Collection","Comments":"Commentaires","addcomment":"Ajouter un commentaire","attachedimage":"Image jointe","Details":"D\u00e9tails","commentsanddetails":"Commentaires (%d) et d\u00e9tails","commentremoved":"Commentaire supprim\u00e9","confirmcloseblockinstance":"\u00cates-vous s\u00fbr de vouloir continuer sans enregistrer vos modifications ?","namedfieldempty":"La rubrique \u00ab%s\u00bb est vide. Vous devez fournir un contenu","processing":"Traitement","unknownerror":"Une erreur inconnue est survenue (0x20f91a0)","loading":"Chargement...","duplicatenamedfield":"La valeur entr\u00e9e existe d\u00e9j\u00e0","showtags":"Afficher mes mots-cl\u00e9s","couldnotgethelp":"Une erreur est survenue lors de la tentative de chargement de la page d'aide","password":"Mot de passe","deleteitem":"Supprimer","moveitemup":"Monter","moveitemdown":"Descendre","username":"Nom d'utilisateur","login":"Connexion","sessiontimedout":"Votre session est \u00e9chue. Veuillez saisir vos donn\u00e9es de connexion pour continuer","loginfailed":"Vous n'avez pas fourni les donn\u00e9es correctes pour vous connecter. Veuillez v\u00e9rifier que votre nom d'utilisateur et votre mot de passe sont corrects.","home":"Accueil","youhavenottaggedanythingyet":"Vous n'avez encore pas utilis\u00e9 de mots-cl\u00e9s","wanttoleavewithoutsaving?":"La page a \u00e9t\u00e9 modifi\u00e9e. Voulez-vous r\u00e9ellement quitter la page sans enregistrer les modifications ?","Help":"Aide","Close":"Fermer","closehelp":"Fermer l'aide","tabs":"ONGLETS","toggletoolbarson":"Permutter la barre de boutons. Afficher la liste compl\u00e8te des boutons","toggletoolbarsoff":"Permutter la barre de boutons. Afficher les boutons de base","imagexofy":"Image (x) de (y)","remove":"Retirer","errorprocessingform":"Une erreur est survenue lors du traitement de ce formulaire. Veuillez v\u00e9rifier les rubriques mises en \u00e9vidence et essayez \u00e0 nouveau.","element.calendar.opendatepicker":"Ouvrir le s\u00e9lecteur de date","rule.maxlength.maxlength":"La rubrique doit contenir au maxium %d caract\u00e8res","rule.required.required":"Cette rubrique est obligatoire"};
+function plural(n) { return n > 1; }
+</script>
+
+    <script src="saes2_126_fichiers/jquery.js"></script>
+
+    <script src="saes2_126_fichiers/filebrowser.js"></script>
+
+    <script src="saes2_126_fichiers/switchbox.js"></script>
+
+    <script src="saes2_126_fichiers/tinymce.js"></script>
+
+    <script src="saes2_126_fichiers/mahara.js"></script>
+
+    <script src="saes2_126_fichiers/paginator.js"></script>
+
+    <script src="saes2_126_fichiers/viewmenu.js"></script>
+
+    <script src="saes2_126_fichiers/collection-navigation.js"></script>
+
+    <script src="saes2_126_fichiers/jquery.mobile.custom.min.js"></script>
+
+    <script src="saes2_126_fichiers/jquery-ui.min.js"></script>
+
+    <script src="saes2_126_fichiers/gridstack-h5.js"></script>
+
+    <script src="saes2_126_fichiers/gridlayout.js"></script>
+
+    <script src="saes2_126_fichiers/views.js"></script>
+
+    <script src="saes2_126_fichiers/moment-with-locales.min.js"></script>
+
+    <script src="saes2_126_fichiers/tempusdominus-bootstrap-4.js"></script>
+
+    <script src="saes2_126_fichiers/formchangechecker.js"></script>
+
+    <script src="saes2_126_fichiers/textareamaxlengthchecker.js"></script>
+
+    <script src="saes2_126_fichiers/select2.full.js"></script>
+
+    <script>
+$(function () {
+    var options = {
+        margin: 1,
+        cellHeight: 10,
+        disableDrag : true,
+        disableResize: true,
+        minCellColumns: null,
+    };
+    var grid = GridStack.init(options);
+    if (grid) {
+        var blocks = [{"height":10,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_3586\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"3586\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Introduction\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_3586_target\" data-blocktype-noajax=\"3586\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p>Cette SA\u00c9 consiste \u00e0 r\u00e9aliser un jeu en java en utilisant GAMIFIER .<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":0,"row":0,"column":0,"order":0,"id":3586},{"height":7,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_3588\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"3588\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Travail r\u00e9alis\u00e9\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_3588_target\" data-blocktype-noajax=\"3588\">\n        \n        \n            \n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":10,"row":0,"column":0,"order":0,"id":3588},{"height":12,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_3591\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"3591\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Comp\u00e9tences d\u00e9velopp\u00e9es\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_3591_target\" data-blocktype-noajax=\"3591\">\n        \n        \n            \n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":17,"row":0,"column":0,"order":0,"id":3591}];
+        if (false) {
+            // the page was copied from an old layout page
+            // and the blocks still need to be resized
+            loadGridTranslate(grid, blocks);
+        }
+        else {
+            loadGrid(grid, blocks);
+        }
+    }
+});var viewid = 773;
+var showmore = 0;
+var commentonartefact = '';
+var showcommentid = '';
+
+jQuery(function () {
+    paginator = new Paginator("feedback_pagination", "feedbacktable", null, "artefact\/comment\/comments.json.php", {"view":773});
+});
+
+jQuery(window).on('blocksloaded', {}, function() {
+
+    var deletebutton = $('#configureblock').find('.deletebutton');
+    deletebutton.on('click', function(e) {
+        if ((formchangemanager.checkDirtyChanges() && confirm(get_string('confirmcloseblockinstance'))) || !formchangemanager.checkDirtyChanges()) {
+            e.stopPropagation();
+            e.preventDefault();
+            var modal_textarea_id = null;
+            $('#configureblock').find('textarea.wysiwyg').each(function() {
+                modal_textarea_id = $(this).attr('id');
+                if (isTinyMceUsed()) {
+                    //Remove any existing tinymce
+                    tinymce.EditorManager.execCommand('mceRemoveEditor', true, modal_textarea_id);
+                }
+            });
+            clear();
+        }
+    });
+
+    function clear() {
+        var block = $('#configureblock');
+        $('.blockinstance-content').html('');
+        block.find('h4').html('');
+        dock.hide();
+    }
+
+    activateModalLinks();
+
+    $('#feedback-form .submitcancel[name="cancel_submit"]').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        tinymce.EditorManager.execCommand('mceRemoveEditor', true, $('#configureblock').find('textarea.wysiwyg').attr('id'));
+        dock.hide();
+    });
+
+    $('.moretags').on('click', function(e) {
+        e.preventDefault();
+        var params = {
+            'viewid': viewid
+        }
+        sendjsonrequest(config['wwwroot'] + 'view/viewtags.json.php',  params, 'POST', function(data) {
+            if (data.count) {
+                $('.tags').html(data.html);
+            }
+        });
+    });
+    // Wire up the annotation feedback forms
+    $('.feedbacktable.modal-docked form').each(function() {
+        initTinyMCE($(this).prop('id'));
+    });
+
+    // Focus on a page comment
+    if (showcommentid && !commentonartefact) {
+        focusOnShowComment();
+    }
+});
+
+/**
+ * Focus on the comment matching the id provided by the showcomment param value
+ *
+ * Note: First wait for blocks to load
+ */
+function focusOnShowComment() {
+    setTimeout(function() {
+        const commentIdString = 'comment' + showcommentid;
+
+        // Identify the comment by focusing on the author link
+        $(".comment-container button.collapsed").trigger('click');
+
+        const author_link = $("#" + commentIdString + " a")[1];
+        author_link.focus();
+        scrollToComment(commentIdString);
+    }, 500);
+}
+
+/**
+ * Scroll down to the commentIdString
+ *
+ * Note: First wait for the dropdown to open
+ */
+function scrollToComment(commentIdString) {
+    setTimeout(function() {
+        const element = document.getElementById(commentIdString);
+        const headerOffset = $('header').height();
+        const sitemessagesOffset = $('.site-messages').height();
+        // Scroll down for page comments
+        if (!commentonartefact) {
+            const y = element.getBoundingClientRect().top + window.pageYOffset - headerOffset - sitemessagesOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+        else {
+            const sectionOffset = $('#' + commentIdString).offset();
+            $('#configureblock .modal-body').animate({ scrollTop: sectionOffset.top - 60 }, 'smooth');
+        }
+    }, 500);
+}
+
+function activateModalLinks() {
+    $('.commentlink').off('click');
+    $('.commentlink').on('click', function(e) {
+        open_modal(e);
+        $(this).closest('div[class*=block-header]').addClass('active-block');
+    });
+
+    $('.modal_link').off('click');
+    $('.modal_link').on('click', function (e) {
+        if ($(this).hasClass('no-modal')) {
+            e.stopPropagation();
+        }
+        else {
+            open_modal(e);
+            $(this).closest('div[class*=block-header]').addClass('active-block');
+        }
+    });
+}
+
+jQuery(window).on('pageupdated', {}, function() {
+    dock.init(jQuery(document));
+    activateModalLinks();
+});jQuery( function() {
+
+});
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="saes2_126_fichiers/jquery-ui.min.css">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" type="text/css" href="saes2_126_fichiers/jquery-ui.min.css">
+
+    <script>pieformPath = "https://mahara-info.iut-bm.univ-fcomte.fr/lib/pieforms/static/core/";</script>
+
+    <script src="saes2_126_fichiers/pieforms.js"></script>
+
+    <script>
+var editor_to_focus;
+PieformManager.connect('onsubmit', null, tinyMCE.triggerSave);
+PieformManager.connect('onload', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceAddEditor', false, 'add_feedback_form_message');
+        jQuery('#add_feedback_form_message').on('focus', function() {
+            editor_to_focus = 'add_feedback_form_message';
+        });
+    };
+});
+PieformManager.connect('onreply', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceRemoveEditor', false, 'add_feedback_form_message');
+    };
+});</script>
+
+    <script>strings.remove="Retirer";strings.cancel="Annuler";strings.defaulthint="Crit\u00e8re de recherche";strings.description="Description";strings.confirmdeletefile="Voulez-vous vraiment supprimer ce fichier ?";strings.confirmdeletefolder="Voulez-vous vraiment supprimer ce dossier ?";strings.confirmdeletefolderandcontents="Voulez-vous vraiment supprimer ce dossier et tout son contenu ?";strings.createfoldersuccess="Le dossier a \u00e9t\u00e9 ajout\u00e9 avec succ\u00e8s";strings.defaultprofileicon="Cette image est celle qui s'affiche par d\u00e9faut comme image du profil";strings.editfile="Modifier le fichier";strings.editfolder="Modifier le dossier";strings.fileappearsinviews="Ce fichier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.fileappearsinposts="Ce fichier est utilis\u00e9 dans un ou plusieurs messages des forums.";strings.fileattachedtoportfolioitems=["Ce fichier est li\u00e9 \u00e0 %s autre \u00e9l\u00e9ment dans votre portfolio","Ce fichier est li\u00e9 \u00e0 %s autres \u00e9l\u00e9ments dans votre portfolio"];strings.fileappearsinskins="Ce fichier est utilis\u00e9 comme image d'arri\u00e8re-plan dans un ou plusieurs styles d'habillage de pages.";strings.filewithnameexists="Un fichier ou dossier de nom \u00ab\u00a0%s\u00a0\u00bb existe d\u00e9j\u00e0.";strings.folderappearsinviews="Ce dossier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.foldercontainsprofileicons=["Le dossier contient %s image du profil","Le dossier contient %s images du profil"];strings.foldernamerequired="Veuillez indiquer un nom pour le nouveau dossier.";strings.foldernotempty="Le dossier n'est pas vide.";strings.maxuploadsize="Taille maximale de d\u00e9p\u00f4t de fichiers";strings.maxuploadsizeis="Taille maximale du fichier : %s";strings.fileisfolder="\"{{filename}}\" est un dossier. Pour t\u00e9l\u00e9verser un dossier vous devez tout d'abord cr\u00e9er un archive zip de celui-ci. Ensuite t\u00e9l\u00e9verser l'archive et d\u00e9compressez-la avec l'option ci-dessous.";strings.nametoolong="Ce nom est trop long. Veuillez en choisir un plus court.";strings.namefieldisrequired="La rubrique nom est requise";strings.upload="D\u00e9poser";strings.uploadingfiletofolder="D\u00e9p\u00f4t de %s vers %s";strings.youmustagreetothecopyrightnotice="Veuillez accepter la d\u00e9claration de copyright";strings.moveto="D\u00e9placer vers %s";strings.rotate0img="Rotate image to the original position";strings.rotate90img="Rotate image 90 degrees clockwise from original position";strings.rotate180img="Rotate image 180 degrees clockwise from original position";strings.rotate270img="Rotate image 270 degrees clockwise from original position";strings.caption="Caption";</script>
+
+    <script src="saes2_126_fichiers/switchbox_002.js"></script>
+
+    <script>
+    function pieform_select_other(el) {
+        var element = jQuery(el);
+        var other = jQuery('#' + element.prop('id') + '_other');
+        if (element.val() == 'other') {
+            other.removeClass('d-none');
+        }
+        else {
+            other.addClass('d-none');
+        }
+    }</script>
+
+
+    <script>$j=jQuery;</script>
+
+    <script>
+tinyMCE.init({
+        theme: "silver",
+    mobile: {
+        theme: 'mobile',
+        toolbar: ['undo', 'bold', 'italic', 'link', 'bullist', 'styleselect'],
+    },
+    browser_spellcheck: true,
+    contextmenu: false,
+    plugins: "tooltoggle,visualblocks,wordcount,link,lists,imagebrowser,table,emoticons,paste,code,fullscreen,directionality,searchreplace,nonbreaking,charmap,anchor",
+    skin: 'oxide',
+    toolbar1: "toolbar_toggle | formatselect | bold italic | bullist numlist | link unlink | imagebrowser | undo redo",
+    toolbar2: "underline strikethrough subscript superscript | alignleft aligncenter alignright alignjustify | outdent indent | forecolor backcolor | ltr rtl | fullscreen",
+    toolbar3: "fontselect | fontsizeselect | emoticons nonbreaking charmap   | table | removeformat pastetext | anchor | code",
+    menubar: false,
+    fix_list_elements: true,
+    image_advtab: true,
+    table_style_by_css: true,
+    browser_spellcheck : true,
+    schema: 'html4',
+    block_formats: 'Paragraph=p; Heading 1=h4; Heading 2=h5; Heading 3=h6; Preformatted=pre',
+    extended_valid_elements:
+        "object[width|height|classid|codebase]"
+        + ",param[name|value]"
+        + ",embed[src|type|width|height|flashvars|wmode]"
+        + ",script[src,type,language]"
+        + ",figure[class]"
+        + ",figcaption[class]"
+        + ",ul[id|type|compact]"
+        + ",iframe[src|width|height|name|scrolling|frameborder|allowfullscreen|webkitallowfullscreen|mozallowfullscreen|longdesc|marginheight|marginwidth|align|title|class|type|style]"
+        + ",a[id|class|title|href|name|target]"
+        + ",button[id|class|title]"
+    ,urlconverter_callback : "custom_urlconvert",
+    language: 'fr_FR',
+    directionality: "ltr",
+    content_css : "https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/theme\/raw\/style\/tinymce.css",
+    font_formats: 'Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Open Sans=Open Sans;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats;',
+    remove_script_host: false,
+    relative_urls: false,
+    target_list: [
+        {title: 'None', value: ''},
+        {title: "Même page", value: '_self'}, // This one is not translated in tinymce lang files
+        {title: 'New window', value: '_blank'}
+    ],
+    link_list: function(success) {
+        // Only show the list of links in the normal user section
+        if (1) {
+            var params = {
+                'viewid': 773
+            }
+            sendjsonrequest(config['wwwroot'] + 'json/tinymceviewlist.json.php',  params, 'POST', function(data) {
+                if (data.count > 0) {
+                    success(JSON.parse(data.data));
+                }
+                else {
+                    success(''); // stop showing list with only option being 'none'
+                }
+            });
+        }
+        else {
+            success(''); // stop showing list with only option being 'none'
+        }
+    },
+    'branding': false,
+    cache_suffix: '?v=9713',
+    
+    setup: function(ed) {
+        
+        ed.on('init', function(ed) {
+        
+            if (typeof(editor_to_focus) == 'string' && ed.editorId == editor_to_focus) {
+                ed.trigger("focus");
+            }
+        });
+        ed.on('keyup change', function (e) {
+            checkTextareaMaxLength(ed.settings.id);
+        });
+        ed.on('LoadContent', function(e) {
+            // Hide all the 2nd/3rd row menu buttons
+            jQuery('.mce-toolbar.mce-first').siblings().addClass('d-none');
+            // The tinymce fullscreen mode does not work properly in a transformed container div
+            // such as div.vertcentre
+            // and IE doesn't like a preset z-index
+            // This work-around will remove/add classes: .vertcenter .configure .blockinstane
+            // of the edit block div
+            // when toggling fullscreen
+            jQuery('div[aria-label="Fullscreen"]').on('click', function(e) {
+                jQuery('div#configureblock').toggleClass('vertcentre');
+                jQuery('div#configureblock').toggleClass('blockinstance');
+                jQuery('div#configureblock').toggleClass('configure');
+            });
+        });
+        
+    }
+});
+
+function imageBrowserConfigSuccess(form, data) {
+    // handle updates to file browser
+    // final form submission handled by tinymce plugin
+    if (data.formelementsuccess) {
+        eval(data.formelementsuccess + '(form, data)');
+        return;
+    }
+}
+
+function imageBrowserConfigError(form, data) {
+    if (data.formelementerror) {
+        eval(data.formelementerror + '(form, data)');
+        return;
+    }
+}
+
+function custom_urlconvert (u, n, e) {
+    // Don't convert the url on the skype status buttons.
+    if (u.indexOf('skype:') == 0) {
+      return u;
+    }
+    var t = tinyMCE.activeEditor, s = t.settings;
+
+    // Don't convert link href since that's the CSS files that gets loaded into the editor also skip local file URLs
+    if (!s.convert_urls || (e && e.nodeName == 'LINK') || u.indexOf('file:') === 0)
+      return u;
+
+    // Convert to relative
+    if (s.relative_urls)
+      return t.documentBaseURI.toRelative(u);
+
+    // Convert to absolute
+    u = t.documentBaseURI.toAbsolute(u, s.remove_script_host);
+
+    return u;
+}
+</script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="saes2_126_fichiers/style.css">
+    <link rel="stylesheet" type="text/css" id="mce-u0" href="saes2_126_fichiers/skin.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <script type="application/javascript" src="saes2_126_fichiers/popper.min.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/bootstrap.min.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/tmpl.min.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/masonry.min.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/pieform.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/formtabs.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/filebrowser_002.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/access.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/notification.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/dock.js"></script>
+    <script type="application/javascript" src="saes2_126_fichiers/theme.js"></script>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar, .footer {
+            background-color: #0d6efd;
+        }
+        .navbar-brand, .footer-text {
+            color: #fff !important;
+        }
+        .footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+
+<body data-bs-usethemedjs="true" class="window js">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="./index.html">Portfolio - Sofiane VAILLON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+    <div id="header-content" class="pageheader pageheader-actions" style="background-color: #e3f2fd;">
+    <div class="container pageheader-content">
+        <div class="row">
+            <div class="col-md-12 main">
+                <div class="main-column">
+                    <div id="pageheader-column-container">
+                        <h1 id="viewh1" class="page-header">
+                            <span class="subsection-heading">SAÉ s2.126</span>
+                            <span class="visually-hidden">Cette page appartient à la collection «&nbsp;SAÉ&nbsp;».</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="container main-content">
+        <div class="row">
+            <main id="main" class="col-md-12 main">
+                <div id="content" class="main-column">
+                    <div id="main-column-container">
+
+
+<input type="hidden" id="viewid" name="id" value="773">
+
+
+<div id="view" class="view-container">
+    <div id="bottom-pane">
+        <div id="column-container" class="user-page-content"><style type="text/css" gs-style-id="gridstack-style-53233"></style>
+            
+            
+            <div class="grid-stack grid-stack-instance-7869 grid-stack-animate" gs-current-row="33" style="height: 330px;">
+            
+            <div id="block_3586" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="0" gs-w="12" gs-h="13" gs-min-h="10" gs-id="3586"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_3586">
+        
+        <div class="block-header quick-edit d-none">
+            <a class="quickeditlink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="3586" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        </div>
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Introduction
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_3586_target" data-blocktype-noajax="3586">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p>Cette SAÉ consiste à réaliser un jeu en java en utilisant GAMIFIER .</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_3588" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="13" gs-w="12" gs-h="8" gs-min-h="7" gs-id="3588"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_3588">
+        
+        <div class="block-header quick-edit d-none">
+            <a class="quickeditlink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="3588" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        </div>
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Travail réalisé
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_3588_target" data-blocktype-noajax="3588">
+        
+        
+            
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_3591" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="21" gs-w="12" gs-h="12" gs-min-h="12" gs-id="3591"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_3591">
+        
+        <div class="block-header quick-edit d-none">
+            <a class="quickeditlink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="3591" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        </div>
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Compétences développées
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_3591_target" data-blocktype-noajax="3591">
+        
+        
+            
+
+
+        
+    </div>
+</div>
+</div></div></div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+                    </div><!-- end main-column -->
+
+                </div><!-- mainmiddle -->
+
+            </main>
+
+            
+
+            
+
+        </div><!-- row -->
+
+    </div><!-- container -->
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="footer-text">© 2024 Mon Portfolio. Tous droits réservés.</span>
+        </div>
+    </footer>
+</body>
+</html>

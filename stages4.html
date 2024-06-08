@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="Stage S4">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+
+    <meta name="author" content="SOFIANE VAILLON">
+    <title>Stage</title>
+    <script>
+    var config = {
+        'theme': [],
+        'sesskey' : '9197b9dc0ef14482',
+        'wwwroot': 'https://mahara-info.iut-bm.univ-fcomte.fr/',
+        'loggedin': 1,
+        'userid': 122,
+        'cc_enabled': 0,
+        'mathjax': 0,
+        'select2_lang': '',
+        'maxuploadsize': '2097152',
+        'maxuploadsizepretty': '2Mo'
+    };
+    </script>
+    <script>var strings = {"confirmcopytitle":"Confirmer la copie","confirmcopydesc":"Veuillez s\u00e9lectionner la destination de la copie :","View":"Page","Collection":"Collection","Comments":"Commentaires","addcomment":"Ajouter un commentaire","attachedimage":"Image jointe","Details":"D\u00e9tails","commentsanddetails":"Commentaires (%d) et d\u00e9tails","commentremoved":"Commentaire supprim\u00e9","confirmcloseblockinstance":"\u00cates-vous s\u00fbr de vouloir continuer sans enregistrer vos modifications ?","namedfieldempty":"La rubrique \u00ab%s\u00bb est vide. Vous devez fournir un contenu","processing":"Traitement","unknownerror":"Une erreur inconnue est survenue (0x20f91a0)","loading":"Chargement...","duplicatenamedfield":"La valeur entr\u00e9e existe d\u00e9j\u00e0","showtags":"Afficher mes mots-cl\u00e9s","couldnotgethelp":"Une erreur est survenue lors de la tentative de chargement de la page d'aide","password":"Mot de passe","deleteitem":"Supprimer","moveitemup":"Monter","moveitemdown":"Descendre","username":"Nom d'utilisateur","login":"Connexion","sessiontimedout":"Votre session est \u00e9chue. Veuillez saisir vos donn\u00e9es de connexion pour continuer","loginfailed":"Vous n'avez pas fourni les donn\u00e9es correctes pour vous connecter. Veuillez v\u00e9rifier que votre nom d'utilisateur et votre mot de passe sont corrects.","home":"Accueil","youhavenottaggedanythingyet":"Vous n'avez encore pas utilis\u00e9 de mots-cl\u00e9s","wanttoleavewithoutsaving?":"La page a \u00e9t\u00e9 modifi\u00e9e. Voulez-vous r\u00e9ellement quitter la page sans enregistrer les modifications ?","Help":"Aide","Close":"Fermer","closehelp":"Fermer l'aide","tabs":"ONGLETS","toggletoolbarson":"Permutter la barre de boutons. Afficher la liste compl\u00e8te des boutons","toggletoolbarsoff":"Permutter la barre de boutons. Afficher les boutons de base","imagexofy":"Image (x) de (y)","remove":"Retirer","errorprocessingform":"Une erreur est survenue lors du traitement de ce formulaire. Veuillez v\u00e9rifier les rubriques mises en \u00e9vidence et essayez \u00e0 nouveau.","element.calendar.opendatepicker":"Ouvrir le s\u00e9lecteur de date","rule.maxlength.maxlength":"La rubrique doit contenir au maxium %d caract\u00e8res","rule.required.required":"Cette rubrique est obligatoire"};
+function plural(n) { return n > 1; }
+</script>
+
+    <script src="stages4_fichiers/jquery.js"></script>
+
+    <script src="stages4_fichiers/filebrowser.js"></script>
+
+    <script src="stages4_fichiers/switchbox.js"></script>
+
+    <script src="stages4_fichiers/tinymce.js"></script>
+
+    <script src="stages4_fichiers/mahara.js"></script>
+
+    <script src="stages4_fichiers/paginator.js"></script>
+
+    <script src="stages4_fichiers/viewmenu.js"></script>
+
+    <script src="stages4_fichiers/collection-navigation.js"></script>
+
+    <script src="stages4_fichiers/jquery.mobile.custom.min.js"></script>
+
+    <script src="stages4_fichiers/jquery-ui.min.js"></script>
+
+    <script src="stages4_fichiers/gridstack-h5.js"></script>
+
+    <!-- <script src="stages4_fichiers/gridlayout.js"></script> -->
+
+    <script src="stages4_fichiers/views.js"></script>
+
+    <script src="stages4_fichiers/moment-with-locales.min.js"></script>
+
+    <script src="stages4_fichiers/tempusdominus-bootstrap-4.js"></script>
+
+    <script src="stages4_fichiers/formchangechecker.js"></script>
+
+    <script src="stages4_fichiers/textareamaxlengthchecker.js"></script>
+
+    <script src="stages4_fichiers/select2.full.js"></script>
+
+    <script>
+$(function () {
+    var options = {
+        margin: 1,
+        cellHeight: 10,
+        disableDrag : true,
+        disableResize: true,
+        minCellColumns: null,
+    };
+    var grid = GridStack.init(options);
+    if (grid) {
+        var blocks = [{"height":25,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_9027\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"9027\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Contexte\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_9027_target\" data-blocktype-noajax=\"9027\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p><strong>Quand <\/strong>: 24 avril au 24 juin<\/p>\n<p><strong>O\u00f9 <\/strong>: \u00c9cole Nationale de Police (ENP) \u00e0 Montb\u00e9liard (25)<\/p>\n<p>Au sein de l\u2019ENP, un garagiste s\u2019occupe de la maintenance des v\u00e9hicules et des r\u00e9servations. Chaque fois qu\u2019une personne souhaite r\u00e9server un v\u00e9hicule, elle doit se rendre directement aupr\u00e8s de lui ou le contacter par t\u00e9l\u00e9phone pour v\u00e9rifier la disponibilit\u00e9 des v\u00e9hicules. Sinon, elle doit s\u2019adresser au responsable de la logistique. En cons\u00e9quence, le garagiste ou le responsable de la logistique doivent saisir certaines informations dans un tableur partag\u00e9, qui ne peut \u00eatre modifi\u00e9 que par une seule personne \u00e0 la fois. Par exemple, si le garagiste quitte son poste en laissant le tableur ouvert, le responsable de la logistique n\u2019aura acc\u00e8s au document qu\u2019en lecture seule.<\/p>\n<p>Ainsi, d\u2019un c\u00f4t\u00e9, la mise en place d\u2019une application web r\u00e9sout le probl\u00e8me d\u2019utilisation simultan\u00e9e et d\u2019un autre c\u00f4t\u00e9 l\u2019application facilite la r\u00e9servation des v\u00e9hicules mais aussi de leur maintenance.<\/p>\n<p>L\u2019application web requiert l\u2019utilisation d\u2019une base de donn\u00e9e MySQL et l\u2019utilisation<br>des langages de programmation suivants : HTML, CSS et PHP.<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":0,"row":0,"column":0,"order":0,"id":9027},{"height":14,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_9028\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"9028\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Cahier des charges\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_9028_target\" data-blocktype-noajax=\"9028\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p>Le sujet comporte deux parties, une partie gestion et une partie r\u00e9servation. En ce qui concerne les parties suivantes, celles-ci doivent pouvoir alimenter une base de donn\u00e9es comprenant l\u2019ensemble des v\u00e9hicules avec leurs caract\u00e9ristiques, les cartes carburants, un historique des interventions techniques effectu\u00e9es, un historique des recompl\u00e8tements de carburant ainsi qu\u2019un historique des missions. \u00c0 cela s\u2019ajoutent les r\u00e9servations et les membres du personnel de l\u2019ENP avec leurs caract\u00e9ristiques.<\/p>\n<p>\u00a0<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":25,"row":0,"column":0,"order":0,"id":9028},{"height":34,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_9029\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"9029\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                DESCRIPTIF FONCTIONNEL\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_9029_target\" data-blocktype-noajax=\"9029\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p>L\u2019utilisation de l\u2019application web peut se faire de trois fa\u00e7ons diff\u00e9rentes, selon que l\u2019on soit un simple utilisateur, un gestionnaire ou bien un administrateur. Cela doit \u00eatre rendu possible gr\u00e2ce \u00e0 un syst\u00e8me de connexion.<\/p>\n<p>L\u2019utilisateur peut faire une demande de r\u00e9servation de v\u00e9hicule en remplissant un formulaire. Celui-ci doit contenir la destination, la mission, la date de d\u00e9part, la date de retour, un champ permettant de saisir des informations suppl\u00e9mentaires concernant la mission (pour faciliter le choix du v\u00e9hicule), ainsi que le matricule (num\u00e9ro unique attribu\u00e9 \u00e0 chaque membre de l\u2019ENP).<\/p>\n<p>Quant au gestionnaire, il peut accepter ou refuser les r\u00e9servations. S\u2019il les refuse, la r\u00e9servation doit \u00eatre supprim\u00e9e. Dans le cas contraire, le gestionnaire doit attribuer un v\u00e9hicule \u00e0 la r\u00e9servation, et celle-ci doit \u00eatre ajout\u00e9e directement \u00e0 l\u2019historique des missions. Dans les deux cas, un courriel contenant la r\u00e9ponse \u00e0 la demande doit \u00eatre envoy\u00e9.<\/p>\n<p>Le gestionnaire doit disposer d\u2019une page qui r\u00e9pertorie tous les v\u00e9hicules, o\u00f9 il peut ajouter, modifier et supprimer les informations d\u2019un v\u00e9hicule. Il a \u00e9galement acc\u00e8s \u00e0 la liste de tous les grades et de tous les membres du personnel. Il peut voir, modifier, supprimer et ajouter dans l\u2019historique des interventions techniques et l\u2019historique des recompl\u00e8tements de carburant. Et pour finir, dans l\u2019historique des missions, le gestionnaire ne doit pas pouvoir ajouter directement une mission mais simplement modifier les missions pr\u00e9-remplies gr\u00e2ce \u00e0 la r\u00e9servation accept\u00e9e, tout en conservant la possibilit\u00e9 de les supprimer.\u00a0<\/p>\n<p>Passons maintenant au dernier cas d\u2019utilisation. L\u2019administrateur a la possibilit\u00e9 de consulter la liste des v\u00e9hicules ainsi que la liste des diff\u00e9rents historiques. Il peut ajouter, modifier et supprimer un membre du personnel ainsi qu\u2019un grade. De plus, l\u2019administrateur doit \u00eatre en mesure de purger les v\u00e9hicules. Cela signifie archiver toutes les donn\u00e9es relatives \u00e0 un v\u00e9hicule dans un fichier, puis supprimer le v\u00e9hicule de la base de donn\u00e9es.<\/p>\n<p>\u00a0<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":39,"row":0,"column":0,"order":0,"id":9029},{"height":29,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_9030\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"9030\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Comp\u00e9tences d\u00e9velopp\u00e9es\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_9030_target\" data-blocktype-noajax=\"9030\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p>Voici une liste des comp\u00e9tences :\u00a0<\/p>\n<ul>\n<li>Comp\u00e9tence 1 : r\u00e9aliser un d\u00e9veloppement d\u2019application<\/li>\n<li>Comp\u00e9tence 2 : optimiser des applications en fonction de crit\u00e8res sp\u00e9cifiques<\/li>\n<li>Comp\u00e9tence 3 : administrer des syst\u00e8mes informatiques communicants complexes<\/li>\n<li>Comp\u00e9tence 4 : g\u00e9rer des donn\u00e9es de l\u2019information<\/li>\n<li>Comp\u00e9tence 5 : conduire un projet<\/li>\n<li>Comp\u00e9tence 6 : collaborer au sein d\u2019une \u00e9quipe informatique<\/li>\n<\/ul>\n<p>Tout d'abord, la comp\u00e9tence 1 et\u00a0 4 ont \u00e9t\u00e9 grandement d\u00e9velopp\u00e9es car j'ai r\u00e9alis\u00e9 une application web tout en utilisant un langage de programmation qui n'avait jamais \u00e9t\u00e9 vu lors du cursus \u00e0 l'IUT mais aussi en utilisant une base de donn\u00e9es MySQL.<\/p>\n<p>Les comp\u00e9tences 5 et 6 ont \u00e9t\u00e9 aussi am\u00e9lior\u00e9es car d'une j'ai d\u00e9couvert les tenants et les aboutissants derri\u00e8re la r\u00e9alisation d\u2019un projet. Il n'y pas seulement les aspects techniques \u00e0 consid\u00e9rer mais aussi les aspects, organisationnels, collaboratifs, et la gestion des ressources et des d\u00e9lais. De plus, mes aptitudes \u00e0 travailler en \u00e9quipe, \u00e0 communiquer et \u00e0 collaborer ont \u00e9t\u00e9 am\u00e9lior\u00e9es.<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":73,"row":0,"column":0,"order":0,"id":9030}];
+        if (false) {
+            // the page was copied from an old layout page
+            // and the blocks still need to be resized
+            loadGridTranslate(grid, blocks);
+        }
+        else {
+            loadGrid(grid, blocks);
+        }
+    }
+});var viewid = 1682;
+var showmore = 0;
+var commentonartefact = '';
+var showcommentid = '';
+
+jQuery(function () {
+    paginator = new Paginator("feedback_pagination", "feedbacktable", null, "artefact\/comment\/comments.json.php", {"view":1682});
+});
+
+jQuery(window).on('blocksloaded', {}, function() {
+
+    var deletebutton = $('#configureblock').find('.deletebutton');
+    deletebutton.on('click', function(e) {
+        if ((formchangemanager.checkDirtyChanges() && confirm(get_string('confirmcloseblockinstance'))) || !formchangemanager.checkDirtyChanges()) {
+            e.stopPropagation();
+            e.preventDefault();
+            var modal_textarea_id = null;
+            $('#configureblock').find('textarea.wysiwyg').each(function() {
+                modal_textarea_id = $(this).attr('id');
+                if (isTinyMceUsed()) {
+                    //Remove any existing tinymce
+                    tinymce.EditorManager.execCommand('mceRemoveEditor', true, modal_textarea_id);
+                }
+            });
+            clear();
+        }
+    });
+
+    function clear() {
+        var block = $('#configureblock');
+        $('.blockinstance-content').html('');
+        block.find('h4').html('');
+        dock.hide();
+    }
+
+    activateModalLinks();
+
+    $('#feedback-form .submitcancel[name="cancel_submit"]').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        tinymce.EditorManager.execCommand('mceRemoveEditor', true, $('#configureblock').find('textarea.wysiwyg').attr('id'));
+        dock.hide();
+    });
+
+    $('.moretags').on('click', function(e) {
+        e.preventDefault();
+        var params = {
+            'viewid': viewid
+        }
+        sendjsonrequest(config['wwwroot'] + 'view/viewtags.json.php',  params, 'POST', function(data) {
+            if (data.count) {
+                $('.tags').html(data.html);
+            }
+        });
+    });
+    // Wire up the annotation feedback forms
+    $('.feedbacktable.modal-docked form').each(function() {
+        initTinyMCE($(this).prop('id'));
+    });
+
+    // Focus on a page comment
+    if (showcommentid && !commentonartefact) {
+        focusOnShowComment();
+    }
+});
+
+/**
+ * Focus on the comment matching the id provided by the showcomment param value
+ *
+ * Note: First wait for blocks to load
+ */
+function focusOnShowComment() {
+    setTimeout(function() {
+        const commentIdString = 'comment' + showcommentid;
+
+        // Identify the comment by focusing on the author link
+        $(".comment-container button.collapsed").trigger('click');
+
+        const author_link = $("#" + commentIdString + " a")[1];
+        author_link.focus();
+        scrollToComment(commentIdString);
+    }, 500);
+}
+
+/**
+ * Scroll down to the commentIdString
+ *
+ * Note: First wait for the dropdown to open
+ */
+function scrollToComment(commentIdString) {
+    setTimeout(function() {
+        const element = document.getElementById(commentIdString);
+        const headerOffset = $('header').height();
+        const sitemessagesOffset = $('.site-messages').height();
+        // Scroll down for page comments
+        if (!commentonartefact) {
+            const y = element.getBoundingClientRect().top + window.pageYOffset - headerOffset - sitemessagesOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+        else {
+            const sectionOffset = $('#' + commentIdString).offset();
+            $('#configureblock .modal-body').animate({ scrollTop: sectionOffset.top - 60 }, 'smooth');
+        }
+    }, 500);
+}
+
+function activateModalLinks() {
+    $('.commentlink').off('click');
+    $('.commentlink').on('click', function(e) {
+        open_modal(e);
+        $(this).closest('div[class*=block-header]').addClass('active-block');
+    });
+
+    $('.modal_link').off('click');
+    $('.modal_link').on('click', function (e) {
+        if ($(this).hasClass('no-modal')) {
+            e.stopPropagation();
+        }
+        else {
+            open_modal(e);
+            $(this).closest('div[class*=block-header]').addClass('active-block');
+        }
+    });
+}
+
+jQuery(window).on('pageupdated', {}, function() {
+    dock.init(jQuery(document));
+    activateModalLinks();
+});jQuery( function() {
+
+});
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="stages4_fichiers/jquery-ui.min.css">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" type="text/css" href="stages4_fichiers/jquery-ui.min.css">
+
+    <script>pieformPath = "https://mahara-info.iut-bm.univ-fcomte.fr/lib/pieforms/static/core/";</script>
+
+    <script src="stages4_fichiers/pieforms.js"></script>
+
+    <script>
+var editor_to_focus;
+PieformManager.connect('onsubmit', null, tinyMCE.triggerSave);
+PieformManager.connect('onload', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceAddEditor', false, 'add_feedback_form_message');
+        jQuery('#add_feedback_form_message').on('focus', function() {
+            editor_to_focus = 'add_feedback_form_message';
+        });
+    };
+});
+PieformManager.connect('onreply', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceRemoveEditor', false, 'add_feedback_form_message');
+    };
+});</script>
+
+    <script>strings.remove="Retirer";strings.cancel="Annuler";strings.defaulthint="Crit\u00e8re de recherche";strings.description="Description";strings.confirmdeletefile="Voulez-vous vraiment supprimer ce fichier ?";strings.confirmdeletefolder="Voulez-vous vraiment supprimer ce dossier ?";strings.confirmdeletefolderandcontents="Voulez-vous vraiment supprimer ce dossier et tout son contenu ?";strings.createfoldersuccess="Le dossier a \u00e9t\u00e9 ajout\u00e9 avec succ\u00e8s";strings.defaultprofileicon="Cette image est celle qui s'affiche par d\u00e9faut comme image du profil";strings.editfile="Modifier le fichier";strings.editfolder="Modifier le dossier";strings.fileappearsinviews="Ce fichier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.fileappearsinposts="Ce fichier est utilis\u00e9 dans un ou plusieurs messages des forums.";strings.fileattachedtoportfolioitems=["Ce fichier est li\u00e9 \u00e0 %s autre \u00e9l\u00e9ment dans votre portfolio","Ce fichier est li\u00e9 \u00e0 %s autres \u00e9l\u00e9ments dans votre portfolio"];strings.fileappearsinskins="Ce fichier est utilis\u00e9 comme image d'arri\u00e8re-plan dans un ou plusieurs styles d'habillage de pages.";strings.filewithnameexists="Un fichier ou dossier de nom \u00ab\u00a0%s\u00a0\u00bb existe d\u00e9j\u00e0.";strings.folderappearsinviews="Ce dossier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.foldercontainsprofileicons=["Le dossier contient %s image du profil","Le dossier contient %s images du profil"];strings.foldernamerequired="Veuillez indiquer un nom pour le nouveau dossier.";strings.foldernotempty="Le dossier n'est pas vide.";strings.maxuploadsize="Taille maximale de d\u00e9p\u00f4t de fichiers";strings.maxuploadsizeis="Taille maximale du fichier : %s";strings.fileisfolder="\"{{filename}}\" est un dossier. Pour t\u00e9l\u00e9verser un dossier vous devez tout d'abord cr\u00e9er un archive zip de celui-ci. Ensuite t\u00e9l\u00e9verser l'archive et d\u00e9compressez-la avec l'option ci-dessous.";strings.nametoolong="Ce nom est trop long. Veuillez en choisir un plus court.";strings.namefieldisrequired="La rubrique nom est requise";strings.upload="D\u00e9poser";strings.uploadingfiletofolder="D\u00e9p\u00f4t de %s vers %s";strings.youmustagreetothecopyrightnotice="Veuillez accepter la d\u00e9claration de copyright";strings.moveto="D\u00e9placer vers %s";strings.rotate0img="Rotate image to the original position";strings.rotate90img="Rotate image 90 degrees clockwise from original position";strings.rotate180img="Rotate image 180 degrees clockwise from original position";strings.rotate270img="Rotate image 270 degrees clockwise from original position";strings.caption="Caption";</script>
+
+    <script src="stages4_fichiers/switchbox_002.js"></script>
+
+    <script>
+    function pieform_select_other(el) {
+        var element = jQuery(el);
+        var other = jQuery('#' + element.prop('id') + '_other');
+        if (element.val() == 'other') {
+            other.removeClass('d-none');
+        }
+        else {
+            other.addClass('d-none');
+        }
+    }</script>
+
+
+    <script>$j=jQuery;</script>
+
+    <script>
+tinyMCE.init({
+        theme: "silver",
+    mobile: {
+        theme: 'mobile',
+        toolbar: ['undo', 'bold', 'italic', 'link', 'bullist', 'styleselect'],
+    },
+    browser_spellcheck: true,
+    contextmenu: false,
+    plugins: "tooltoggle,visualblocks,wordcount,link,lists,imagebrowser,table,emoticons,paste,code,fullscreen,directionality,searchreplace,nonbreaking,charmap,anchor",
+    skin: 'oxide',
+    toolbar1: "toolbar_toggle | formatselect | bold italic | bullist numlist | link unlink | imagebrowser | undo redo",
+    toolbar2: "underline strikethrough subscript superscript | alignleft aligncenter alignright alignjustify | outdent indent | forecolor backcolor | ltr rtl | fullscreen",
+    toolbar3: "fontselect | fontsizeselect | emoticons nonbreaking charmap   | table | removeformat pastetext | anchor | code",
+    menubar: false,
+    fix_list_elements: true,
+    image_advtab: true,
+    table_style_by_css: true,
+    browser_spellcheck : true,
+    schema: 'html4',
+    block_formats: 'Paragraph=p; Heading 1=h4; Heading 2=h5; Heading 3=h6; Preformatted=pre',
+    extended_valid_elements:
+        "object[width|height|classid|codebase]"
+        + ",param[name|value]"
+        + ",embed[src|type|width|height|flashvars|wmode]"
+        + ",script[src,type,language]"
+        + ",figure[class]"
+        + ",figcaption[class]"
+        + ",ul[id|type|compact]"
+        + ",iframe[src|width|height|name|scrolling|frameborder|allowfullscreen|webkitallowfullscreen|mozallowfullscreen|longdesc|marginheight|marginwidth|align|title|class|type|style]"
+        + ",a[id|class|title|href|name|target]"
+        + ",button[id|class|title]"
+    ,urlconverter_callback : "custom_urlconvert",
+    language: 'fr_FR',
+    directionality: "ltr",
+    content_css : "https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/theme\/raw\/style\/tinymce.css",
+    font_formats: 'Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Open Sans=Open Sans;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats;',
+    remove_script_host: false,
+    relative_urls: false,
+    target_list: [
+        {title: 'None', value: ''},
+        {title: "Même page", value: '_self'}, // This one is not translated in tinymce lang files
+        {title: 'New window', value: '_blank'}
+    ],
+    link_list: function(success) {
+        // Only show the list of links in the normal user section
+        if (1) {
+            var params = {
+                'viewid': 1682
+            }
+            sendjsonrequest(config['wwwroot'] + 'json/tinymceviewlist.json.php',  params, 'POST', function(data) {
+                if (data.count > 0) {
+                    success(JSON.parse(data.data));
+                }
+                else {
+                    success(''); // stop showing list with only option being 'none'
+                }
+            });
+        }
+        else {
+            success(''); // stop showing list with only option being 'none'
+        }
+    },
+    'branding': false,
+    cache_suffix: '?v=9713',
+    
+    setup: function(ed) {
+        
+        ed.on('init', function(ed) {
+        
+            if (typeof(editor_to_focus) == 'string' && ed.editorId == editor_to_focus) {
+                ed.trigger("focus");
+            }
+        });
+        ed.on('keyup change', function (e) {
+            checkTextareaMaxLength(ed.settings.id);
+        });
+        ed.on('LoadContent', function(e) {
+            // Hide all the 2nd/3rd row menu buttons
+            jQuery('.mce-toolbar.mce-first').siblings().addClass('d-none');
+            // The tinymce fullscreen mode does not work properly in a transformed container div
+            // such as div.vertcentre
+            // and IE doesn't like a preset z-index
+            // This work-around will remove/add classes: .vertcenter .configure .blockinstane
+            // of the edit block div
+            // when toggling fullscreen
+            jQuery('div[aria-label="Fullscreen"]').on('click', function(e) {
+                jQuery('div#configureblock').toggleClass('vertcentre');
+                jQuery('div#configureblock').toggleClass('blockinstance');
+                jQuery('div#configureblock').toggleClass('configure');
+            });
+        });
+        
+    }
+});
+
+function imageBrowserConfigSuccess(form, data) {
+    // handle updates to file browser
+    // final form submission handled by tinymce plugin
+    if (data.formelementsuccess) {
+        eval(data.formelementsuccess + '(form, data)');
+        return;
+    }
+}
+
+function imageBrowserConfigError(form, data) {
+    if (data.formelementerror) {
+        eval(data.formelementerror + '(form, data)');
+        return;
+    }
+}
+
+function custom_urlconvert (u, n, e) {
+    // Don't convert the url on the skype status buttons.
+    if (u.indexOf('skype:') == 0) {
+      return u;
+    }
+    var t = tinyMCE.activeEditor, s = t.settings;
+
+    // Don't convert link href since that's the CSS files that gets loaded into the editor also skip local file URLs
+    if (!s.convert_urls || (e && e.nodeName == 'LINK') || u.indexOf('file:') === 0)
+      return u;
+
+    // Convert to relative
+    if (s.relative_urls)
+      return t.documentBaseURI.toRelative(u);
+
+    // Convert to absolute
+    u = t.documentBaseURI.toAbsolute(u, s.remove_script_host);
+
+    return u;
+}
+</script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="stages4_fichiers/style.css">
+    <link rel="stylesheet" type="text/css" id="mce-u0" href="stages4_fichiers/skin.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <script type="application/javascript" src="stages4_fichiers/popper.min.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/bootstrap.min.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/tmpl.min.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/masonry.min.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/pieform.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/formtabs.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/filebrowser_002.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/access.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/notification.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/dock.js"></script>
+    <script type="application/javascript" src="stages4_fichiers/theme.js"></script>
+    <style>
+        body {
+            background-color: #e3f2fd;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .navbar, .footer {
+            background-color: #0d6efd;
+        }
+        .navbar-brand, .footer-text {
+            color: #fff !important;
+        }
+        .footer {
+            background-color: #0d6efd;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+
+</head>
+
+
+<body data-bs-usethemedjs="true" class="window js">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="./index.html">Portfolio - Sofiane VAILLON</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    
+<div id="header-content" class="pageheader pageheader-actions" style="background-color: #e3f2fd;">
+    <div class="container pageheader-content">
+        <div class="row">
+            <div class="col-md-12 main">
+                <div class="main-column">
+                    <div id="pageheader-column-container">
+                        
+                        <h1 id="viewh1" class="page-header">
+                                <span class="subsection-heading">Stage</span>
+                        </h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="container main-content">
+        <div class="row">
+            <a id="header-main"></a>
+            <main id="main" class="col-md-12 main">
+                <div id="content" class="main-column">
+                    <div id="main-column-container">
+                        
+<input type="hidden" id="viewid" name="id" value="1682">
+
+
+<div id="view" class="view-container">
+    <div id="bottom-pane">
+        <div id="column-container" class="user-page-content"><style type="text/css" gs-style-id="gridstack-style-51563"></style>
+            
+            
+            <div class="grid-stack grid-stack-instance-3386 grid-stack-animate" gs-current-row="156" style="height: 1560px;">
+            
+            <div id="block_9027" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="0" gs-w="12" gs-h="39" gs-min-h="25" gs-id="9027"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_9027">
+        
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Contexte
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_9027_target" data-blocktype-noajax="9027">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p><strong>Quand </strong>: 24 avril au 24 juin</p>
+<p><strong>Où </strong>: École Nationale de Police (ENP) à Montbéliard (25)</p>
+<p>Au sein de l’ENP, un garagiste s’occupe de la maintenance des 
+véhicules et des réservations. Chaque fois qu’une personne souhaite 
+réserver un véhicule, elle doit se rendre directement auprès de lui ou 
+le contacter par téléphone pour vérifier la disponibilité des véhicules.
+ Sinon, elle doit s’adresser au responsable de la logistique. En 
+conséquence, le garagiste ou le responsable de la logistique doivent 
+saisir certaines informations dans un tableur partagé, qui ne peut être 
+modifié que par une seule personne à la fois. Par exemple, si le 
+garagiste quitte son poste en laissant le tableur ouvert, le responsable
+ de la logistique n’aura accès au document qu’en lecture seule.</p>
+<p>Ainsi, d’un côté, la mise en place d’une application web résout le 
+problème d’utilisation simultanée et d’un autre côté l’application 
+facilite la réservation des véhicules mais aussi de leur maintenance.</p>
+<p>L’application web requiert l’utilisation d’une base de donnée MySQL et l’utilisation des langages de programmation suivants : HTML, CSS et PHP.</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_9028" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="39" gs-w="12" gs-h="21" gs-min-h="14" gs-id="9028"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_9028">
+        
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Cahier des charges
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_9028_target" data-blocktype-noajax="9028">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p>Le sujet comporte deux parties, une partie gestion et une partie 
+réservation. En ce qui concerne les parties suivantes, celles-ci doivent
+ pouvoir alimenter une base de données comprenant l’ensemble des 
+véhicules avec leurs caractéristiques, les cartes carburants, un 
+historique des interventions techniques effectuées, un historique des 
+recomplètements de carburant ainsi qu’un historique des missions. À cela
+ s’ajoutent les réservations et les membres du personnel de l’ENP avec 
+leurs caractéristiques.</p>
+<p>&nbsp;</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_9029" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="60" gs-w="12" gs-h="52" gs-min-h="34" gs-id="9029"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_9029">
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                DESCRIPTIF FONCTIONNEL
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_9029_target" data-blocktype-noajax="9029">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p>L’utilisation de l’application web peut se faire de trois façons 
+différentes, selon que l’on soit un simple utilisateur, un gestionnaire 
+ou bien un administrateur. Cela doit être rendu possible grâce à un 
+système de connexion.</p>
+<p>L’utilisateur peut faire une demande de réservation de véhicule en 
+remplissant un formulaire. Celui-ci doit contenir la destination, la 
+mission, la date de départ, la date de retour, un champ permettant de 
+saisir des informations supplémentaires concernant la mission (pour 
+faciliter le choix du véhicule), ainsi que le matricule (numéro unique 
+attribué à chaque membre de l’ENP).</p>
+<p>Quant au gestionnaire, il peut accepter ou refuser les réservations. 
+S’il les refuse, la réservation doit être supprimée. Dans le cas 
+contraire, le gestionnaire doit attribuer un véhicule à la réservation, 
+et celle-ci doit être ajoutée directement à l’historique des missions. 
+Dans les deux cas, un courriel contenant la réponse à la demande doit 
+être envoyé.</p>
+<p>Le gestionnaire doit disposer d’une page qui répertorie tous les 
+véhicules, où il peut ajouter, modifier et supprimer les informations 
+d’un véhicule. Il a également accès à la liste de tous les grades et de 
+tous les membres du personnel. Il peut voir, modifier, supprimer et 
+ajouter dans l’historique des interventions techniques et l’historique 
+des recomplètements de carburant. Et pour finir, dans l’historique des 
+missions, le gestionnaire ne doit pas pouvoir ajouter directement une 
+mission mais simplement modifier les missions pré-remplies grâce à la 
+réservation acceptée, tout en conservant la possibilité de les 
+supprimer.&nbsp;</p>
+<p>Passons maintenant au dernier cas d’utilisation. L’administrateur a 
+la possibilité de consulter la liste des véhicules ainsi que la liste 
+des différents historiques. Il peut ajouter, modifier et supprimer un 
+membre du personnel ainsi qu’un grade. De plus, l’administrateur doit 
+être en mesure de purger les véhicules. Cela signifie archiver toutes 
+les données relatives à un véhicule dans un fichier, puis supprimer le 
+véhicule de la base de données.</p>
+<p>&nbsp;</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_9030" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="112" gs-w="12" gs-h="44" gs-min-h="29" gs-id="9030"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_9030">
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Compétences développées
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_9030_target" data-blocktype-noajax="9030">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p>Voici une liste des compétences :&nbsp;</p>
+<ul>
+<li>Compétence 1 : réaliser un développement d’application</li>
+<li>Compétence 2 : optimiser des applications en fonction de critères spécifiques</li>
+<li>Compétence 3 : administrer des systèmes informatiques communicants complexes</li>
+<li>Compétence 4 : gérer des données de l’information</li>
+<li>Compétence 5 : conduire un projet</li>
+<li>Compétence 6 : collaborer au sein d’une équipe informatique</li>
+</ul>
+<p>Tout d'abord, la compétence 1 et&nbsp; 4 ont été grandement 
+développées car j'ai réalisé une application web tout en utilisant un 
+langage de programmation qui n'avait jamais été vu lors du cursus à 
+l'IUT mais aussi en utilisant une base de données MySQL.</p>
+<p>Les compétences 5 et 6 ont été aussi améliorées car d'une j'ai 
+découvert les tenants et les aboutissants derrière la réalisation d’un 
+projet. Il n'y pas seulement les aspects techniques à considérer mais 
+aussi les aspects, organisationnels, collaboratifs, et la gestion des 
+ressources et des délais. De plus, mes aptitudes à travailler en équipe,
+ à communiquer et à collaborer ont été améliorées.</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div></div>
+        </div>
+    </div>
+</div>
+
+
+
+
+                    </div><!-- end main-column -->
+
+                </div><!-- mainmiddle -->
+
+            </main>
+
+            
+
+            
+
+        </div><!-- row -->
+
+    </div><!-- container -->
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="footer-text">© 2024 Mon Portfolio. Tous droits réservés.</span>
+        </div>
+    </footer>
+</body></html>

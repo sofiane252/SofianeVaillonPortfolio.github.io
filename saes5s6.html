@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html lang="fr" class="ie ie8"><![endif]-->
+<!--[if IE 9 ]><html lang="fr" class="ie ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html lang="fr" data-lt-installed="true"><!--<![endif]--><head data-basehref="https://mahara-info.iut-bm.univ-fcomte.fr/"><link rel="stylesheet" type="text/css" href="saes5s6_fichiers/views-js.css">
+    <meta name="generator" content="Mahara 22.10 (https://mahara.org)">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="SAÉ - A - dev. appli complexe - Mahara">
+    <meta property="og:description" content="Mahara est une plateforme de gestion de ePortfolio et un système de réseau social.
+Il permet aux utilisateurs de créer et d'administrer un portfolio numérique de leurs apprentissages, et le système de réseau social donne un espace de communication où ils peuvent interagir les uns avec les autres.">
+    <meta property="og:image" content="https://mahara-info.iut-bm.univ-fcomte.fr/theme/raw/images/site-logo-facebook.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="viewport" id="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=10.0,initial-scale=1.0">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#374757">
+
+    <meta name="author" content="SOFIANE VAILLON">
+    <title>SAÉ - A - dev. appli complexe - Mahara</title>
+    <script>
+    var config = {
+        'theme': [],
+        'sesskey' : '2664f85ebefede18',
+        'wwwroot': 'https://mahara-info.iut-bm.univ-fcomte.fr/',
+        'loggedin': 1,
+        'userid': 122,
+        'cc_enabled': 0,
+        'mathjax': 0,
+        'select2_lang': '',
+        'maxuploadsize': '2097152',
+        'maxuploadsizepretty': '2Mo'
+    };
+    </script>
+    <script>var strings = {"confirmcopytitle":"Confirmer la copie","confirmcopydesc":"Veuillez s\u00e9lectionner la destination de la copie :","View":"Page","Collection":"Collection","Comments":"Commentaires","addcomment":"Ajouter un commentaire","attachedimage":"Image jointe","Details":"D\u00e9tails","commentsanddetails":"Commentaires (%d) et d\u00e9tails","commentremoved":"Commentaire supprim\u00e9","confirmcloseblockinstance":"\u00cates-vous s\u00fbr de vouloir continuer sans enregistrer vos modifications ?","namedfieldempty":"La rubrique \u00ab%s\u00bb est vide. Vous devez fournir un contenu","processing":"Traitement","unknownerror":"Une erreur inconnue est survenue (0x20f91a0)","loading":"Chargement...","duplicatenamedfield":"La valeur entr\u00e9e existe d\u00e9j\u00e0","showtags":"Afficher mes mots-cl\u00e9s","couldnotgethelp":"Une erreur est survenue lors de la tentative de chargement de la page d'aide","password":"Mot de passe","deleteitem":"Supprimer","moveitemup":"Monter","moveitemdown":"Descendre","username":"Nom d'utilisateur","login":"Connexion","sessiontimedout":"Votre session est \u00e9chue. Veuillez saisir vos donn\u00e9es de connexion pour continuer","loginfailed":"Vous n'avez pas fourni les donn\u00e9es correctes pour vous connecter. Veuillez v\u00e9rifier que votre nom d'utilisateur et votre mot de passe sont corrects.","home":"Accueil","youhavenottaggedanythingyet":"Vous n'avez encore pas utilis\u00e9 de mots-cl\u00e9s","wanttoleavewithoutsaving?":"La page a \u00e9t\u00e9 modifi\u00e9e. Voulez-vous r\u00e9ellement quitter la page sans enregistrer les modifications ?","Help":"Aide","Close":"Fermer","closehelp":"Fermer l'aide","tabs":"ONGLETS","toggletoolbarson":"Permutter la barre de boutons. Afficher la liste compl\u00e8te des boutons","toggletoolbarsoff":"Permutter la barre de boutons. Afficher les boutons de base","imagexofy":"Image (x) de (y)","remove":"Retirer","errorprocessingform":"Une erreur est survenue lors du traitement de ce formulaire. Veuillez v\u00e9rifier les rubriques mises en \u00e9vidence et essayez \u00e0 nouveau.","element.calendar.opendatepicker":"Ouvrir le s\u00e9lecteur de date","rule.maxlength.maxlength":"La rubrique doit contenir au maxium %d caract\u00e8res","rule.required.required":"Cette rubrique est obligatoire"};
+function plural(n) { return n > 1; }
+</script>
+
+    <script src="saes5s6_fichiers/jquery.js"></script>
+
+    <script src="saes5s6_fichiers/filebrowser_002.js"></script>
+
+    <script src="saes5s6_fichiers/switchbox_002.js"></script>
+
+    <script src="saes5s6_fichiers/tinymce.js"></script>
+
+    <script src="saes5s6_fichiers/mahara.js"></script>
+
+    <script src="saes5s6_fichiers/paginator.js"></script>
+
+    <script src="saes5s6_fichiers/viewmenu.js"></script>
+
+    <script src="saes5s6_fichiers/collection-navigation.js"></script>
+
+    <script src="saes5s6_fichiers/jquery.mobile.custom.min.js"></script>
+
+    <script src="saes5s6_fichiers/jquery-ui.min.js"></script>
+
+    <script src="saes5s6_fichiers/gridstack-h5.js"></script>
+
+    <script src="saes5s6_fichiers/gridlayout.js"></script>
+
+    <script src="saes5s6_fichiers/views.js"></script>
+
+    <script src="saes5s6_fichiers/moment-with-locales.min.js"></script>
+
+    <script src="saes5s6_fichiers/tempusdominus-bootstrap-4.js"></script>
+
+    <script src="saes5s6_fichiers/formchangechecker.js"></script>
+
+    <script src="saes5s6_fichiers/textareamaxlengthchecker.js"></script>
+
+    <script src="saes5s6_fichiers/select2.full.js"></script>
+
+    <script>
+$(function () {
+    var options = {
+        margin: 1,
+        cellHeight: 10,
+        disableDrag : true,
+        disableResize: true,
+        minCellColumns: null,
+    };
+    var grid = GridStack.init(options);
+    if (grid) {
+        var blocks = [{"height":78,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13246\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"13246\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Aide \u00e0 l\u2019arbitrage footballistique\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13246_target\" data-blocktype-noajax=\"13246\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p><span style=\"font-weight:400;\">Tout d'abord voici le contexte :<\/span><\/p>\n<p><span style=\"font-weight:400;\">La SA\u00c9 consiste \u00e0 \"inventer\" une application bas\u00e9e sur des micro-contr\u00f4leurs et des objets connect\u00e9s (t\u00e9l\u00e9phones portables, cam\u00e9ra IP) pour collecter des donn\u00e9es. Ces donn\u00e9es sont soit directement textuelles\/num\u00e9riques, comme c'est souvent le cas avec celles que collectent des micro-contr\u00f4leurs gr\u00e2ce \u00e0 des capteurs, soit au format audio, image, etc qu'il faut traiter pour en tirer de l'information textuelle\/num\u00e9rique. Qu'il y ait ou non traitement, le r\u00e9sultat est stock\u00e9 dans une base de donn\u00e9es non relationnelle, type MongoDB. Une application web front-end faite en VueJS permet ensuite de r\u00e9cup\u00e9rer des donn\u00e9es dans cette BdD (au travers d'une API) et de les visualiser.<\/span><\/p>\n<p>Les autres contraintes \u00e0 respecter sont :<\/p>\n<ul>\n<li>un serveur multi-thread\u00e9 de centralisation des donn\u00e9es, <strong>\u00e9crit en Java et bas\u00e9 sur des sockets TCP.<\/strong><\/li>\n<li>ce serveur interagit avec la BdD mongodb de deux fa\u00e7ons : la principale est via un <strong>API REST \u00e9crite en node<\/strong>, la secondaire directement via l'A<strong>PI Java pour mongodb<\/strong>,<\/li>\n<li>un serveur d'analyse multim\u00e9dia qui doit \u00eatre diff\u00e9rent du serveur de centralisation des donn\u00e9es et qui <strong>ne doit pas<\/strong> \u00eatre un serveur web type API REST (cf. ci-dessous)<\/li>\n<li>la BdD qui centralise les donn\u00e9es est forc\u00e9ment <strong>mongodb,<\/strong><\/li>\n<li>le front-end se fait avec vuejs, avec des graphiques\/stats produits dynamiquement \u00e0 partir de donn\u00e9es de la BdD,<\/li>\n<li>le d\u00e9veloppement se fait en utilisant des processus d'int\u00e9gration continue,<\/li>\n<li>les serveurs sont d\u00e9ploy\u00e9s sous la forme de conteneurs dockers, produits \u00e0 la fin du processus d'int\u00e9gration continue, si possible de fa\u00e7on automatique.<\/li>\n<li>le fait de versionner + int\u00e9gration continue se font via les serveurs GitLab et Jenkins du d\u00e9partement (NB : ce qui veut dire acc\u00e8s VPN si vous \u00eates \u00e0 l'ext\u00e9rieur du r\u00e9seau fac)<\/li>\n<\/ul>\n<p><span style=\"font-weight:400;\">Le sujet concerne l\u2019aide \u00e0 l\u2019arbitrage dans le monde du football. Et pour r\u00e9pondre aux contraintes, l'id\u00e9e est de mettre un micro controlleur dans un ballon de football (voir image 1) ce qui va permettre de savoir o\u00f9 est la ballon avec pr\u00e9cision. Il y a deux cas d'utilisations :<br><\/span><\/p>\n<p><strong>Micro-contr\u00f4leur<\/strong> :<\/p>\n<p><span style=\"font-weight:400;\">D\u00e9tecter lorsque le ballon sort du terrain dans le but d'aider l'arbitre \u00e0 prendre la meilleure d\u00e9cision<\/span>.<\/p>\n<p><strong>Prise d\u2019une photo (\u00e0 partir d'un t\u00e9l\u00e9phone) : <br><\/strong><\/p>\n<p><span style=\"font-weight:400;\">Permet de v\u00e9rifier \u00e0 l\u2019aide d\u2019un serveur qui analysera l\u2019image afin de d\u00e9duire si le ballon est sorti ou non\u00a0 (voir l'image 2).<\/span><span style=\"font-weight:400;\">\u00a0 <\/span><\/p>\n<p>L'objectif du projet est de d<span style=\"font-weight:400;\">\u00e9tecter lorsque le ballon sort du terrain afin d\u2019aider l'arbitre \u00e0 prendre la meilleure d\u00e9cision. Les enjeux de ce projet sont un e<\/span><span style=\"font-weight:400;\">nrichissement personnel et l'acquisition de comp\u00e9tences professionnelles.<br><\/span><\/p>\n<p><span style=\"font-weight:400;\">Le projet r\u00e9pond \u00e0 un besoin, le voici : avoir le moins d\u2019erreur d\u2019arbitrage lors d\u2019un match.<\/span><\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":0,"row":0,"column":0,"order":0,"id":13246},{"height":82,"content":"<div class=\"bt-image gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13247\">\n        \n        <div class=\"block-header d-none details-comments \">\n    \n        \n        <a class=\"commentlink  \"\n            data-bs-toggle=\"modal-docked\"\n            data-bs-target=\"#configureblock\"\n            href=\"#\"\n            data-blockid=\"13247\"\n            data-artefactid=\"6396\"\n            title=\"\">\n        \n            \n                <span class=\"icon icon-plus\" role=\"presentation\" aria-hidden=\"true\" title=\"Commentaires et les d\u00e9tails\"><\/span>\n                Ajouter un commentaire\n                <span class=\"bh-margin-left icon icon-search-plus\" role=\"presentation\" aria-hidden=\"true\"><\/span>\n                D\u00e9tails\n            \n        \n        <\/a>\n    \n<\/div>\n\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Structure fonctionnelle\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13247_target\" data-blocktype-noajax=\"13247\">\n        \n        \n            <div class=\"imageblock card-body\" itemscope itemtype=\"http:\/\/schema.org\/ImageObject\">\n    <div class=\"image\">\n        \n            <a class=\"modal_link\" data-bs-toggle=\"modal-docked\" data-bs-target=\"#configureblock\" href=\"#\" data-artefactid=\"6396\"  data-blockid=\"13247\">\n            \n                <img src=\"https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/artefact\/file\/download.php?file=6396&amp;view=2533&amp;time=1717785101\" alt=\"\" itemprop=\"contentURL\" data-bs-target=\"#configureblock\" data-artefactid=\"6396\" data-blockid=\"13247\">\n            \n            <\/a>\n        \n    <\/div>\n<\/div>\n        \n    <\/div>\n<\/div>\n","width":8,"positionx":0,"positiony":78,"row":0,"column":0,"order":0,"id":13247},{"height":51,"content":"<div class=\"bt-image gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13262\">\n        \n        <div class=\"block-header d-none details-comments \">\n    \n        \n        <a class=\"commentlink  \"\n            data-bs-toggle=\"modal-docked\"\n            data-bs-target=\"#configureblock\"\n            href=\"#\"\n            data-blockid=\"13262\"\n            data-artefactid=\"6400\"\n            title=\"\">\n        \n            \n                <span class=\"icon icon-plus\" role=\"presentation\" aria-hidden=\"true\" title=\"Commentaires et les d\u00e9tails\"><\/span>\n                Ajouter un commentaire\n                <span class=\"bh-margin-left icon icon-search-plus\" role=\"presentation\" aria-hidden=\"true\"><\/span>\n                D\u00e9tails\n            \n        \n        <\/a>\n    \n<\/div>\n\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Image 1\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13262_target\" data-blocktype-noajax=\"13262\">\n        \n        \n            <div class=\"imageblock card-body\" itemscope itemtype=\"http:\/\/schema.org\/ImageObject\">\n    <div class=\"image\">\n        \n            <a class=\"modal_link\" data-bs-toggle=\"modal-docked\" data-bs-target=\"#configureblock\" href=\"#\" data-artefactid=\"6400\"  data-blockid=\"13262\">\n            \n                <img src=\"https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/artefact\/file\/download.php?file=6400&amp;view=2533&amp;time=1717785101\" alt=\"\" itemprop=\"contentURL\" data-bs-target=\"#configureblock\" data-artefactid=\"6400\" data-blockid=\"13262\">\n            \n            <\/a>\n        \n    <\/div>\n<\/div>\n        \n    <\/div>\n<\/div>\n","width":6,"positionx":0,"positiony":160,"row":0,"column":0,"order":0,"id":13262},{"height":49,"content":"<div class=\"bt-image gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13261\">\n        \n        <div class=\"block-header d-none details-comments \">\n    \n        \n        <a class=\"commentlink  \"\n            data-bs-toggle=\"modal-docked\"\n            data-bs-target=\"#configureblock\"\n            href=\"#\"\n            data-blockid=\"13261\"\n            data-artefactid=\"6398\"\n            title=\"\">\n        \n            \n                <span class=\"icon icon-plus\" role=\"presentation\" aria-hidden=\"true\" title=\"Commentaires et les d\u00e9tails\"><\/span>\n                Ajouter un commentaire\n                <span class=\"bh-margin-left icon icon-search-plus\" role=\"presentation\" aria-hidden=\"true\"><\/span>\n                D\u00e9tails\n            \n        \n        <\/a>\n    \n<\/div>\n\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Image 2\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13261_target\" data-blocktype-noajax=\"13261\">\n        \n        \n            <div class=\"imageblock card-body\" itemscope itemtype=\"http:\/\/schema.org\/ImageObject\">\n    <div class=\"image\">\n        \n            <a class=\"modal_link\" data-bs-toggle=\"modal-docked\" data-bs-target=\"#configureblock\" href=\"#\" data-artefactid=\"6398\"  data-blockid=\"13261\">\n            \n                <img src=\"https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/artefact\/file\/download.php?file=6398&amp;view=2533&amp;time=1717785101\" alt=\"\" itemprop=\"contentURL\" data-bs-target=\"#configureblock\" data-artefactid=\"6398\" data-blockid=\"13261\">\n            \n            <\/a>\n        \n    <\/div>\n<\/div>\n        \n    <\/div>\n<\/div>\n","width":6,"positionx":6,"positiony":160,"row":0,"column":0,"order":0,"id":13261},{"height":52,"content":"<div class=\"bt-image gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13259\">\n        \n        <div class=\"block-header d-none details-comments \">\n    \n        \n        <a class=\"commentlink  \"\n            data-bs-toggle=\"modal-docked\"\n            data-bs-target=\"#configureblock\"\n            href=\"#\"\n            data-blockid=\"13259\"\n            data-artefactid=\"6397\"\n            title=\"\">\n        \n            \n                <span class=\"icon icon-plus\" role=\"presentation\" aria-hidden=\"true\" title=\"Commentaires et les d\u00e9tails\"><\/span>\n                Ajouter un commentaire\n                <span class=\"bh-margin-left icon icon-search-plus\" role=\"presentation\" aria-hidden=\"true\"><\/span>\n                D\u00e9tails\n            \n        \n        <\/a>\n    \n<\/div>\n\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Burn-up chart\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13259_target\" data-blocktype-noajax=\"13259\">\n        \n        \n            <div class=\"imageblock card-body\" itemscope itemtype=\"http:\/\/schema.org\/ImageObject\">\n    <div class=\"image\">\n        \n            <a class=\"modal_link\" data-bs-toggle=\"modal-docked\" data-bs-target=\"#configureblock\" href=\"#\" data-artefactid=\"6397\"  data-blockid=\"13259\">\n            \n                <img src=\"https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/artefact\/file\/download.php?file=6397&amp;view=2533&amp;time=1717785101\" alt=\"\" itemprop=\"contentURL\" data-bs-target=\"#configureblock\" data-artefactid=\"6397\" data-blockid=\"13259\">\n            \n            <\/a>\n        \n    <\/div>\n<\/div>\n        \n    <\/div>\n<\/div>\n","width":6,"positionx":6,"positiony":209,"row":0,"column":0,"order":0,"id":13259},{"height":62,"content":"<div class=\"bt-pdf gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13248\">\n        \n        <div class=\"block-header d-none details-comments quick-edit \">\n    \n        \n                <a class=\"quickeditlink with-displaylink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"13248\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        \n        <a class=\"detailslink with-quickedit modal_link list-group-heading \"\n            data-bs-toggle=\"modal-docked\"\n            data-bs-target=\"#configureblock\"\n            href=\"#\"\n            data-blockid=\"13248\"\n            data-artefactid=\"6399\"\n            title=\"D\u00e9tails\">\n            <span class=\"icon icon-search-plus bh-details-only\" role=\"presentation\" aria-hidden=\"true\" title=\"D\u00e9tails\"><\/span>\n            \n                D\u00e9tails\n            \n        <\/a>\n    \n<\/div>\n\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Diaporama\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13248_target\" data-blocktype-noajax=\"13248\">\n        \n        \n            <div class=\"card-body\">\n<iframe allow=\"fullscreen\" src=\"https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/artefact\/file\/blocktype\/pdf\/viewer.php?editing=&ingroup=&artefactid=6399&lang=fr&view=2533\" class=\"pdfiframe\"><\/iframe>\n<\/div>\n\n        \n    <\/div>\n<\/div>\n","width":6,"positionx":0,"positiony":211,"row":0,"column":0,"order":0,"id":13248},{"height":51,"content":"<div class=\"bt-text gridstackblock card card-secondary  clearfix \" id=\"blockinstance_13249\">\n        \n        <div class=\"block-header quick-edit d-none\">\n            <a class=\"quickeditlink modal_link list-group-heading \"\n        data-bs-toggle=\"modal-docked\"\n        data-bs-target=\"#configureblock\"\n        href=\"#\"\n        data-blockid=\"13249\"\n        title=\"\u00c9dition rapide\">\n        <span class=\"icon icon-pencil-alt\" role=\"presentation\" aria-hidden=\"true\" title=\"\u00c9dition rapide\"><\/span>\n        \u00c9dition rapide\n    <\/a>\n\n        <\/div>\n    \n    \n        <h2 class=\"title card-header js-heading\">\n            \n\n            <span class=\"collapse-inline\">\n                Comp\u00e9tences\n                \n            <\/span>\n\n            \n\n        <\/h2>\n    \n\n    <div class=\"block\"  id=\"blockinstance_13249_target\" data-blocktype-noajax=\"13249\">\n        \n        \n            \n\n<div class=\"textblock card-body flush\">\n<p>En me r\u00e9f\u00e9rant aux Apprentissages Critiques (AC) du Programme National (PN), j\u2019ai pu d\u00e9velopper mes comp\u00e9tences durant ce stage. Plusieurs apprentissages critiques ont \u00e9t\u00e9 am\u00e9lior\u00e9s, notamment l'AC 1, 2, 3 et 4 de la comp\u00e9tence 1 (*1), qui consistent \u00e0 impl\u00e9menter, \u00e9laborer des conceptions simples, Faire des essais et \u00e9valuer leurs r\u00e9sultats en regard des sp\u00e9cifications et d\u00e9velopper des interfaces utilisateurs. Cela s'est manifest\u00e9 lors du d\u00e9veloppement du projet, o\u00f9, j'ai d\u00fb d\u00e9velopper une partie de l'interface web, sp\u00e9cialement avec le profil de l'utilisateur, mais aussi lors du d\u00e9veloppement de l'application mobile afin d'envoyer une photo au serveur d'analyse.<br>Ensuite, la comp\u00e9tence 4 (*2) a \u00e9t\u00e9 am\u00e9lior\u00e9. En effet, l'utilisation d'une base de donn\u00e9es non relationnelle (MongoDB), m'a fait enregistrer des donn\u00e9es du micro-contr\u00f4leur et aussi envoyer des donn\u00e9es depuis la base de donn\u00e9es vers l'interface web.<br>Enfin, pour les comp\u00e9tences 5 (*3) et 6 (*4), qui englobe la capacit\u00e9 \u00e0 conduire un projet ainsi que travailler dans une \u00e9quipe informatique, ont \u00e9t\u00e9 am\u00e9lior\u00e9es. Travailler au sein d'un groupe de quatre \u00e9tudiants m\u2019a permis de collaborer avec tous les membres du groupe, ce qui a rendu les \u00e9changes essentiels et cela a renforc\u00e9 mes aptitudes \u00e0 travailler en \u00e9quipe et \u00e0 communiquer. Pour la partie concernant la conduite d'un projet, j'ai su, avec les membres de l'\u00e9quipe, r\u00e9partir les t\u00e2ches selon les comp\u00e9tences de chacun et bien \u00e9videmment mettre des d\u00e9lais sur ce qu'on devait faire afin d'\u00eatre dans les temps.\u00a0 <\/p>\n<p>*1 \u00a0R\u00e9aliser un d\u00e9veloppement d\u2019application<br>*2\u00a0 G\u00e9rer des donn\u00e9es de l\u2019information<br>*3 \u00a0Conduire un projet<br>*4\u00a0 Collaborer au sein d\u2019une \u00e9quipe informatique<\/p>\n<\/div>\n\n\n        \n    <\/div>\n<\/div>\n","width":12,"positionx":0,"positiony":273,"row":0,"column":0,"order":0,"id":13249}];
+        if (false) {
+            // the page was copied from an old layout page
+            // and the blocks still need to be resized
+            loadGridTranslate(grid, blocks);
+        }
+        else {
+            loadGrid(grid, blocks);
+        }
+    }
+});var viewid = 2533;
+var showmore = 0;
+var commentonartefact = '';
+var showcommentid = '';
+
+jQuery(function () {
+    paginator = new Paginator("feedback_pagination", "feedbacktable", null, "artefact\/comment\/comments.json.php", {"view":2533});
+});
+
+jQuery(window).on('blocksloaded', {}, function() {
+
+    var deletebutton = $('#configureblock').find('.deletebutton');
+    deletebutton.on('click', function(e) {
+        if ((formchangemanager.checkDirtyChanges() && confirm(get_string('confirmcloseblockinstance'))) || !formchangemanager.checkDirtyChanges()) {
+            e.stopPropagation();
+            e.preventDefault();
+            var modal_textarea_id = null;
+            $('#configureblock').find('textarea.wysiwyg').each(function() {
+                modal_textarea_id = $(this).attr('id');
+                if (isTinyMceUsed()) {
+                    //Remove any existing tinymce
+                    tinymce.EditorManager.execCommand('mceRemoveEditor', true, modal_textarea_id);
+                }
+            });
+            clear();
+        }
+    });
+
+    function clear() {
+        var block = $('#configureblock');
+        $('.blockinstance-content').html('');
+        block.find('h4').html('');
+        dock.hide();
+    }
+
+    activateModalLinks();
+
+    $('#feedback-form .submitcancel[name="cancel_submit"]').on('click', function(e) {
+        e.stopPropagation();
+        e.preventDefault();
+        tinymce.EditorManager.execCommand('mceRemoveEditor', true, $('#configureblock').find('textarea.wysiwyg').attr('id'));
+        dock.hide();
+    });
+
+    $('.moretags').on('click', function(e) {
+        e.preventDefault();
+        var params = {
+            'viewid': viewid
+        }
+        sendjsonrequest(config['wwwroot'] + 'view/viewtags.json.php',  params, 'POST', function(data) {
+            if (data.count) {
+                $('.tags').html(data.html);
+            }
+        });
+    });
+    // Wire up the annotation feedback forms
+    $('.feedbacktable.modal-docked form').each(function() {
+        initTinyMCE($(this).prop('id'));
+    });
+
+    // Focus on a page comment
+    if (showcommentid && !commentonartefact) {
+        focusOnShowComment();
+    }
+});
+
+/**
+ * Focus on the comment matching the id provided by the showcomment param value
+ *
+ * Note: First wait for blocks to load
+ */
+function focusOnShowComment() {
+    setTimeout(function() {
+        const commentIdString = 'comment' + showcommentid;
+
+        // Identify the comment by focusing on the author link
+        $(".comment-container button.collapsed").trigger('click');
+
+        const author_link = $("#" + commentIdString + " a")[1];
+        author_link.focus();
+        scrollToComment(commentIdString);
+    }, 500);
+}
+
+/**
+ * Scroll down to the commentIdString
+ *
+ * Note: First wait for the dropdown to open
+ */
+function scrollToComment(commentIdString) {
+    setTimeout(function() {
+        const element = document.getElementById(commentIdString);
+        const headerOffset = $('header').height();
+        const sitemessagesOffset = $('.site-messages').height();
+        // Scroll down for page comments
+        if (!commentonartefact) {
+            const y = element.getBoundingClientRect().top + window.pageYOffset - headerOffset - sitemessagesOffset;
+            window.scrollTo({top: y, behavior: 'smooth'});
+        }
+        else {
+            const sectionOffset = $('#' + commentIdString).offset();
+            $('#configureblock .modal-body').animate({ scrollTop: sectionOffset.top - 60 }, 'smooth');
+        }
+    }, 500);
+}
+
+function activateModalLinks() {
+    $('.commentlink').off('click');
+    $('.commentlink').on('click', function(e) {
+        open_modal(e);
+        $(this).closest('div[class*=block-header]').addClass('active-block');
+    });
+
+    $('.modal_link').off('click');
+    $('.modal_link').on('click', function (e) {
+        if ($(this).hasClass('no-modal')) {
+            e.stopPropagation();
+        }
+        else {
+            open_modal(e);
+            $(this).closest('div[class*=block-header]').addClass('active-block');
+        }
+    });
+}
+
+jQuery(window).on('pageupdated', {}, function() {
+    dock.init(jQuery(document));
+    activateModalLinks();
+});jQuery( function() {
+
+});
+    </script>
+
+
+    <link rel="stylesheet" type="text/css" href="saes5s6_fichiers/jquery-ui.min.css">
+
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" type="text/css" href="saes5s6_fichiers/jquery-ui.min.css">
+
+    <script>pieformPath = "https://mahara-info.iut-bm.univ-fcomte.fr/lib/pieforms/static/core/";</script>
+
+    <script src="saes5s6_fichiers/pieforms.js"></script>
+
+    <script>
+var editor_to_focus;
+PieformManager.connect('onsubmit', null, tinyMCE.triggerSave);
+PieformManager.connect('onload', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceAddEditor', false, 'add_feedback_form_message');
+        jQuery('#add_feedback_form_message').on('focus', function() {
+            editor_to_focus = 'add_feedback_form_message';
+        });
+    };
+});
+PieformManager.connect('onreply', null, function() {
+    if (!arguments[0] || arguments[0]=='add_feedback_form') {
+        tinyMCE.execCommand('mceRemoveEditor', false, 'add_feedback_form_message');
+    };
+});</script>
+
+    <script>strings.remove="Retirer";strings.cancel="Annuler";strings.defaulthint="Crit\u00e8re de recherche";strings.description="Description";strings.confirmdeletefile="Voulez-vous vraiment supprimer ce fichier ?";strings.confirmdeletefolder="Voulez-vous vraiment supprimer ce dossier ?";strings.confirmdeletefolderandcontents="Voulez-vous vraiment supprimer ce dossier et tout son contenu ?";strings.createfoldersuccess="Le dossier a \u00e9t\u00e9 ajout\u00e9 avec succ\u00e8s";strings.defaultprofileicon="Cette image est celle qui s'affiche par d\u00e9faut comme image du profil";strings.editfile="Modifier le fichier";strings.editfolder="Modifier le dossier";strings.fileappearsinviews="Ce fichier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.fileappearsinposts="Ce fichier est utilis\u00e9 dans un ou plusieurs messages des forums.";strings.fileattachedtoportfolioitems=["Ce fichier est li\u00e9 \u00e0 %s autre \u00e9l\u00e9ment dans votre portfolio","Ce fichier est li\u00e9 \u00e0 %s autres \u00e9l\u00e9ments dans votre portfolio"];strings.fileappearsinskins="Ce fichier est utilis\u00e9 comme image d'arri\u00e8re-plan dans un ou plusieurs styles d'habillage de pages.";strings.filewithnameexists="Un fichier ou dossier de nom \u00ab\u00a0%s\u00a0\u00bb existe d\u00e9j\u00e0.";strings.folderappearsinviews="Ce dossier est pr\u00e9sent dans une ou plusieurs de vos pages.";strings.foldercontainsprofileicons=["Le dossier contient %s image du profil","Le dossier contient %s images du profil"];strings.foldernamerequired="Veuillez indiquer un nom pour le nouveau dossier.";strings.foldernotempty="Le dossier n'est pas vide.";strings.maxuploadsize="Taille maximale de d\u00e9p\u00f4t de fichiers";strings.maxuploadsizeis="Taille maximale du fichier : %s";strings.fileisfolder="\"{{filename}}\" est un dossier. Pour t\u00e9l\u00e9verser un dossier vous devez tout d'abord cr\u00e9er un archive zip de celui-ci. Ensuite t\u00e9l\u00e9verser l'archive et d\u00e9compressez-la avec l'option ci-dessous.";strings.nametoolong="Ce nom est trop long. Veuillez en choisir un plus court.";strings.namefieldisrequired="La rubrique nom est requise";strings.upload="D\u00e9poser";strings.uploadingfiletofolder="D\u00e9p\u00f4t de %s vers %s";strings.youmustagreetothecopyrightnotice="Veuillez accepter la d\u00e9claration de copyright";strings.moveto="D\u00e9placer vers %s";strings.rotate0img="Rotate image to the original position";strings.rotate90img="Rotate image 90 degrees clockwise from original position";strings.rotate180img="Rotate image 180 degrees clockwise from original position";strings.rotate270img="Rotate image 270 degrees clockwise from original position";strings.caption="Caption";</script>
+
+    <script src="saes5s6_fichiers/switchbox.js"></script>
+
+    <script>
+    function pieform_select_other(el) {
+        var element = jQuery(el);
+        var other = jQuery('#' + element.prop('id') + '_other');
+        if (element.val() == 'other') {
+            other.removeClass('d-none');
+        }
+        else {
+            other.addClass('d-none');
+        }
+    }</script>
+
+
+    <script>$j=jQuery;</script>
+
+    <script>
+tinyMCE.init({
+        theme: "silver",
+    mobile: {
+        theme: 'mobile',
+        toolbar: ['undo', 'bold', 'italic', 'link', 'bullist', 'styleselect'],
+    },
+    browser_spellcheck: true,
+    contextmenu: false,
+    plugins: "tooltoggle,visualblocks,wordcount,link,lists,imagebrowser,table,emoticons,paste,code,fullscreen,directionality,searchreplace,nonbreaking,charmap,anchor",
+    skin: 'oxide',
+    toolbar1: "toolbar_toggle | formatselect | bold italic | bullist numlist | link unlink | imagebrowser | undo redo",
+    toolbar2: "underline strikethrough subscript superscript | alignleft aligncenter alignright alignjustify | outdent indent | forecolor backcolor | ltr rtl | fullscreen",
+    toolbar3: "fontselect | fontsizeselect | emoticons nonbreaking charmap   | table | removeformat pastetext | anchor | code",
+    menubar: false,
+    fix_list_elements: true,
+    image_advtab: true,
+    table_style_by_css: true,
+    browser_spellcheck : true,
+    schema: 'html4',
+    block_formats: 'Paragraph=p; Heading 1=h4; Heading 2=h5; Heading 3=h6; Preformatted=pre',
+    extended_valid_elements:
+        "object[width|height|classid|codebase]"
+        + ",param[name|value]"
+        + ",embed[src|type|width|height|flashvars|wmode]"
+        + ",script[src,type,language]"
+        + ",figure[class]"
+        + ",figcaption[class]"
+        + ",ul[id|type|compact]"
+        + ",iframe[src|width|height|name|scrolling|frameborder|allowfullscreen|webkitallowfullscreen|mozallowfullscreen|longdesc|marginheight|marginwidth|align|title|class|type|style]"
+        + ",a[id|class|title|href|name|target]"
+        + ",button[id|class|title]"
+    ,urlconverter_callback : "custom_urlconvert",
+    language: 'fr_FR',
+    directionality: "ltr",
+    content_css : "https:\/\/mahara-info.iut-bm.univ-fcomte.fr\/theme\/raw\/style\/tinymce.css",
+    font_formats: 'Andale Mono=andale mono,times;Arial=arial,helvetica,sans-serif;Arial Black=arial black,avant garde;Book Antiqua=book antiqua,palatino;Comic Sans MS=comic sans ms,sans-serif;Courier New=courier new,courier;Georgia=georgia,palatino;Helvetica=helvetica;Impact=impact,chicago;Open Sans=Open Sans;Symbol=symbol;Tahoma=tahoma,arial,helvetica,sans-serif;Terminal=terminal,monaco;Times New Roman=times new roman,times;Trebuchet MS=trebuchet ms,geneva;Verdana=verdana,geneva;Webdings=webdings;Wingdings=wingdings,zapf dingbats;',
+    remove_script_host: false,
+    relative_urls: false,
+    target_list: [
+        {title: 'None', value: ''},
+        {title: "Même page", value: '_self'}, // This one is not translated in tinymce lang files
+        {title: 'New window', value: '_blank'}
+    ],
+    link_list: function(success) {
+        // Only show the list of links in the normal user section
+        if (1) {
+            var params = {
+                'viewid': 2533
+            }
+            sendjsonrequest(config['wwwroot'] + 'json/tinymceviewlist.json.php',  params, 'POST', function(data) {
+                if (data.count > 0) {
+                    success(JSON.parse(data.data));
+                }
+                else {
+                    success(''); // stop showing list with only option being 'none'
+                }
+            });
+        }
+        else {
+            success(''); // stop showing list with only option being 'none'
+        }
+    },
+    'branding': false,
+    cache_suffix: '?v=9713',
+    
+    setup: function(ed) {
+        
+        ed.on('init', function(ed) {
+        
+            if (typeof(editor_to_focus) == 'string' && ed.editorId == editor_to_focus) {
+                ed.trigger("focus");
+            }
+        });
+        ed.on('keyup change', function (e) {
+            checkTextareaMaxLength(ed.settings.id);
+        });
+        ed.on('LoadContent', function(e) {
+            // Hide all the 2nd/3rd row menu buttons
+            jQuery('.mce-toolbar.mce-first').siblings().addClass('d-none');
+            // The tinymce fullscreen mode does not work properly in a transformed container div
+            // such as div.vertcentre
+            // and IE doesn't like a preset z-index
+            // This work-around will remove/add classes: .vertcenter .configure .blockinstane
+            // of the edit block div
+            // when toggling fullscreen
+            jQuery('div[aria-label="Fullscreen"]').on('click', function(e) {
+                jQuery('div#configureblock').toggleClass('vertcentre');
+                jQuery('div#configureblock').toggleClass('blockinstance');
+                jQuery('div#configureblock').toggleClass('configure');
+            });
+        });
+        
+    }
+});
+
+function imageBrowserConfigSuccess(form, data) {
+    // handle updates to file browser
+    // final form submission handled by tinymce plugin
+    if (data.formelementsuccess) {
+        eval(data.formelementsuccess + '(form, data)');
+        return;
+    }
+}
+
+function imageBrowserConfigError(form, data) {
+    if (data.formelementerror) {
+        eval(data.formelementerror + '(form, data)');
+        return;
+    }
+}
+
+function custom_urlconvert (u, n, e) {
+    // Don't convert the url on the skype status buttons.
+    if (u.indexOf('skype:') == 0) {
+      return u;
+    }
+    var t = tinyMCE.activeEditor, s = t.settings;
+
+    // Don't convert link href since that's the CSS files that gets loaded into the editor also skip local file URLs
+    if (!s.convert_urls || (e && e.nodeName == 'LINK') || u.indexOf('file:') === 0)
+      return u;
+
+    // Convert to relative
+    if (s.relative_urls)
+      return t.documentBaseURI.toRelative(u);
+
+    // Convert to absolute
+    u = t.documentBaseURI.toAbsolute(u, s.remove_script_host);
+
+    return u;
+}
+</script>
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="saes5s6_fichiers/style.css">
+
+    <script type="application/javascript" src="saes5s6_fichiers/popper.min.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/bootstrap.min.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/tmpl.min.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/masonry.min.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/pieform.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/formtabs.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/filebrowser.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/access.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/notification.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/dock.js"></script>
+    <script type="application/javascript" src="saes5s6_fichiers/theme.js"></script>
+
+    <link rel="shortcut icon" href="https://mahara-info.iut-bm.univ-fcomte.fr/favicon.ico?v=9713" type="image/vnd.microsoft.icon">
+    <link rel="image_src" href="saes5s6_fichiers/site-logo.svg">
+
+
+
+<link rel="stylesheet" type="text/css" id="mce-u0" href="saes5s6_fichiers/skin.min.css"></head>
+
+
+<body data-bs-usethemedjs="true" class="window js">
+    <div class="skiplink btn-group btn-group-top">
+        <a class="visually-hidden-focusable btn btn-secondary" href="#header-target-main">Aller directement au contenu principal</a>
+    </div>
+
+    
+
+    
+    
+    
+    
+    
+
+    
+
+    <header class="header fixed-top no-site-messages">
+        <div class="navbar navbar-default navbar-main">
+            <div class="container">
+                <div id="logo-area" class="logo-area">
+                    <a href="https://mahara-info.iut-bm.univ-fcomte.fr/" class="logo change-to-small">
+                        <img src="saes5s6_fichiers/site-logo.svg" alt="Mahara" data-bs-customlogo="0">
+                    </a>
+                    
+                    
+                        <a href="https://mahara-info.iut-bm.univ-fcomte.fr/" class="logoxs change-to-small-default">
+                            <img src="saes5s6_fichiers/site-logo-small.svg" alt="Mahara">
+                        </a>
+                    
+                    
+                    <div id="loading-box" class="loading-box d-none"></div>
+                </div>
+
+                <ul class="nav topright-menu">
+    
+    
+</ul>
+
+
+                <div class="nav-toggle-area">
+                    
+                        <button class="main-nav-toggle navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".nav-main" aria-expanded="false" aria-controls="main-nav" title="Menu principal">
+                            <span class="visually-hidden">Afficher le menu principal</span>
+                            <span class="icon icon-bars icon-lg" role="presentation" aria-hidden="true"></span>
+                        </button>
+                    
+                    
+                    
+                        <div class="user-icon-wrap-toggle navbar-toggle">
+                            <a href="https://mahara-info.iut-bm.univ-fcomte.fr/user/view.php?id=122" class="user-icon user-icon-25" title="Page du profil">
+                                <img src="saes5s6_fichiers/no_userphoto25.png" alt="Image du profil pour SOFIANE VAILLON">
+                            </a>
+                            <button class="user-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".nav-main-user" aria-expanded="false" aria-controls="main-nav-user" title="Menu du compte">
+                                <span class="visually-hidden">Afficher le menu du compte</span>
+                                <span class="icon icon-chevron-down collapsed"></span>
+                            </button>
+                        </div>
+                    
+                    
+                        
+                        <a href="https://mahara-info.iut-bm.univ-fcomte.fr/module/multirecipientnotification/inbox.php" title="Boîte de réception" role="button" id="nav-inbox" class="navbar-toggle navbar-messages collapsed">
+                            <span class="visually-hidden">Boîte de réception <span class="unreadmessagecount-sr">26 non lus</span></span>
+                            <span class="icon icon-envelope icon-lg" role="presentation" aria-hidden="true"></span>
+                            
+                                <span class="navbar-messages-count">
+                                    <span class="unreadmessagecount">26</span>
+                                </span>
+                            
+                        </a>
+                        
+                    
+                    
+                        <button class="lang-toggle navbar-toggle" type="button" data-bs-toggle="collapse" data-bs-target=".nav-language" aria-expanded="false" aria-controls="main-language" title="Choisir la langue">
+                            <span class="visually-hidden">Choisir la langue</span>
+                            <span class="icon icon-language icon-lg" role="presentation" aria-hidden="true"></span>
+                        </button>
+                    
+                    
+                    <button class="search-toggle navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-form" aria-expanded="false" aria-controls="usf">
+                        <span class="icon icon-search icon-lg" role="presentation" aria-hidden="true"></span>
+                        <span class="nav-title visually-hidden">Afficher la recherche</span>
+                    </button>
+                    
+                </div>
+                
+                <div class="navbar-form collapse navbar-collapse">
+                    <form class="pieform header-search-form" name="usf" method="post" action="https://mahara-info.iut-bm.univ-fcomte.fr/user/index.php" id="usf">
+<div><span id="usf_query_container" class="form-group-inline"><label class="visually-hidden" for="usf_query">Rechercher des utilisateurs</label><input type="text" class="form-control text" id="usf_query" name="query" placeholder="Rechercher des utilisateurs" tabindex="0"></span><span id="usf_submit_container" class="form-group-inline"><button type="submit" class="btn-secondary input-group-append button btn" id="usf_submit" name="submit" tabindex="0"><span class="icon icon-search" role="presentation" aria-hidden="true"></span><span class="visually-hidden">Aller</span></button></span></div><input type="hidden" class="hidden" id="usf_sesskey" name="sesskey" value="2664f85ebefede18">
+<input type="hidden" name="pieform_usf" value="">
+</form>
+
+                </div>
+                
+                
+<nav aria-label="Menu principal">
+  <div id="main-nav" class=" nav collapse navbar-collapse nav-main">
+    <ul id="nav" class="nav navbar-nav">
+        <li class="home"><a href="https://mahara-info.iut-bm.univ-fcomte.fr/" class="home"><span class="icon icon-tachometer-alt" role="presentation" aria-hidden="true"></span>Tableau de bord</a></li><li class="create active"><button class="create menu-dropdown-toggle navbar-toggle" data-bs-toggle="collapse" data-bs-parent="#nav" data-bs-target="#childmenu-1" aria-expanded="false"><span class="icon icon-plus" role="presentation" aria-hidden="true"></span>Créer<span class="icon icon-chevron-down navbar-showchildren" role="presentation" aria-hidden="true"></span></button><ul id="childmenu-1" class=" show collapse child-nav"><li class="active "><a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/index.php">Portfolios</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/file/index.php">Fichiers</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/blog/index.php">Journaux</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/internal/notes.php">Notes</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/plans/index.php">Projets</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/resume/index.php">Curriculum vitae</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/tags.php">Mots-clés</a></li></ul></li><li class="share"><button class="share menu-dropdown-toggle navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#nav" data-bs-target="#childmenu-2" aria-expanded="false"><span class="icon icon-unlock" role="presentation" aria-hidden="true"></span>Partager<span class="icon icon-chevron-down navbar-showchildren" role="presentation" aria-hidden="true"></span></button><ul id="childmenu-2" class=" collapse child-nav"><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/share.php">Partagées par moi</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/sharedviews.php">Partagées avec moi</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/module/submissions/index.php">Soumissions</a></li></ul></li><li class="engage"><button class="engage menu-dropdown-toggle navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#nav" data-bs-target="#childmenu-3" aria-expanded="false"><span class="icon icon-people-group" role="presentation" aria-hidden="true"></span>Collaborer<span class="icon icon-chevron-down navbar-showchildren" role="presentation" aria-hidden="true"></span></button><ul id="childmenu-3" class=" collapse child-nav"><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/user/index.php">Personnes</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/group/index.php">Groupes</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/group/topics.php">Sujets de discussion</a></li></ul></li><li class="manage"><button class="manage menu-dropdown-toggle navbar-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#nav" data-bs-target="#childmenu-4" aria-expanded="false"><span class="icon icon-briefcase" role="presentation" aria-hidden="true"></span>Gérer<span class="icon icon-chevron-down navbar-showchildren" role="presentation" aria-hidden="true"></span></button><ul id="childmenu-4" class=" collapse child-nav"><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/export/index.php">Exporter</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/import/index.php">Importer</a></li></ul></li>
+    </ul>
+  </div>
+</nav>
+<nav aria-label="Menu administration">
+  <div id="main-nav-admin" class=" nav collapse navbar-collapse nav-main-admin">
+    <ul id="navadmin" class="nav navbar-nav">
+    
+    </ul>
+  </div>
+</nav>
+
+
+
+<nav aria-label="Menu du compte">
+  <div id="main-nav-user" class=" nav collapse navbar-collapse nav-main-user">
+    <ul id="navuser" class="nav navbar-nav">
+      <li class="userdashboard  has-icon dropdown-item"><a href="https://mahara-info.iut-bm.univ-fcomte.fr/user/view.php?id=122" class="menu-dropdown-toggle"><span class="icon icon-user" role="presentation" aria-hidden="true"></span><span class="nav-title">SOFIANE VAILLON</span></a></li><li class="profile  has-icon dropdown-item"><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/internal/index.php" class="menu-dropdown-toggle"><span class="icon icon-regular icon-address-card" role="presentation" aria-hidden="true"></span><span class="nav-title">Profil</span></a></li><li class="profileicons  has-icon dropdown-item"><a href="https://mahara-info.iut-bm.univ-fcomte.fr/artefact/file/profileicons.php" class="menu-dropdown-toggle"><span class="icon icon-portrait" role="presentation" aria-hidden="true"></span><span class="nav-title">Images du profil</span></a></li><li class="settings  has-icon dropdown-item"><button type="button" class="navbar-toggle menu-dropdown-toggle collapsed" data-bs-toggle="collapse" data-bs-parent="#navuser" data-bs-target="#userchildmenu-0" aria-expanded="false"><span class="icon icon-cogs" role="presentation" aria-hidden="true"></span><span class="nav-title">Préférences</span><span class="icon icon-chevron-down navbar-showchildren" role="presentation" aria-hidden="true"></span></button><ul id="userchildmenu-0" class=" collapse child-nav"><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/index.php">Préférences</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/userprivacy.php">Informations légales</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/activity/preferences/index.php">Notifications</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/apps.php">Applications connectées</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/institutions.php">Institutions</a></li></ul></li><li class="btn-logout has-icon menu-dropdown-toggle"><a id="logoutbutton" href="https://mahara-info.iut-bm.univ-fcomte.fr/?logout"><span class="icon icon-sign-out-alt" role="presentation" aria-hidden="true"></span><span class="nav-title">Déconnexion</span></a><script>$('#logoutbutton').click(function(e) {if ($(this).hasClass('disabled')) {e.preventDefault();return false;}$(this).addClass('disabled');return true;});</script></li>
+    </ul>
+  </div>
+</nav>
+
+
+                
+                
+<nav aria-label="Langue">
+  <div id="main-language" class="nav collapse navbar-collapse nav-language" role="tabcard">
+    <ul id="navadmin" class="nav navbar-nav"><li class="active"><a href="https://mahara-info.iut-bm.univ-fcomte.fr/changelanguage.php?lang=fr.utf8">Français</a></li><li class=""><a href="https://mahara-info.iut-bm.univ-fcomte.fr/changelanguage.php?lang=en.utf8">English</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+                
+            </div>
+        </div>
+    </header>
+
+    
+        <a id="header-target-main"></a>
+<div id="header-content" class="pageheader pageheader-actions">
+    <div class="container pageheader-content">
+        <div class="row">
+            <div class="col-md-12 main">
+                <div class="main-column">
+                    <div id="pageheader-column-container">
+                        
+                            <div id="collectionnavwrap" class="collection-nav">
+
+    <div class="collection-title">Troisième année</div>
+
+
+    <span id="collectionbtns" class="collection-nav-btns">
+      <nav class="custom-dropdown dropdown" aria-label="Collection">
+        
+            
+        
+            
+              
+            
+        
+
+        <button class="picker form-control dropdown-toggle" type="button" id="currentindex" data-currentindex="1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Vous êtes sur la page 2/2
+        </button>
+
+        <ul id="pagelist" class="dropdown-menu" aria-labelledby="collection navigation dropdown">
+          
+            
+              <li class="dropdown-item">
+                <a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/view.php?id=2532" data-index="0" data-location="https://mahara-info.iut-bm.univ-fcomte.fr/view/view.php?id=2532">Migration du système d’information pour la mise en place de la maquette 2024-2029</a>
+              </li>
+            
+          
+            
+              
+              <li class="dropdown-item">
+                <a class="active" href="https://mahara-info.iut-bm.univ-fcomte.fr/view/view.php?id=2533">SAÉ - A - dev. appli complexe</a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+
+      
+        <button type="button" class="btn btn-secondary prevpage" title="Page précédente">
+          <span class="icon left icon-chevron-left" role="presentation" aria-hidden="true"></span>
+        </button>
+        <button type="button" class="btn btn-secondary nextpage disabled" title="Page suivante">
+          <span class="icon right icon-chevron-right" role="presentation" aria-hidden="true"></span>
+        </button>
+      
+    </span>
+    
+</div>
+
+                        
+
+                        
+                        
+
+                        
+                        <h1 id="viewh1" class="page-header">
+                            
+                                <span class="subsection-heading">SAÉ - A - dev. appli complexe</span>
+                                <span class="visually-hidden">Cette page appartient à la collection «&nbsp;Troisième année&nbsp;».</span>
+                            
+                        </h1>
+                        
+
+                        
+
+                        <div class="text-small">
+                            
+    par <a href="https://mahara-info.iut-bm.univ-fcomte.fr/user/view.php?id=122">SOFIANE VAILLON</a>
+
+
+
+                            
+                        </div>
+
+                        <div class="pageactions">
+    <div class="btn-group-vertical">
+
+        
+        <button id="details-btn" type="button" class="btn btn-secondary" title="Description alternative du lien">
+            <span class="icon icon-search-plus icon-lg left" role="presentation" aria-hidden="true"></span>
+            <span class="visually-hidden">Description alternative du lien</span>
+        </button>
+        
+
+        <button data-url="https://mahara-info.iut-bm.univ-fcomte.fr/view/blocks.php?id=2533" type="button" class="btn btn-secondary" title="Modifier cette page"><span class="icon icon-pencil-alt icon-lg left" role="presentation" aria-hidden="true"></span><span class="visually-hidden">Modifier cette page</span></button>
+
+        
+
+        <button type="button" class="btn btn-secondary dropdown-toggle" title="Plus d’options" data-bs-toggle="dropdown" aria-expanded="false">
+            <span class="icon icon-ellipsis-h icon-lg" role="presentation" aria-hidden="true"></span>
+            <span class="visually-hidden">Plus d’options</span>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" role="menu">
+
+            <li class="dropdown-item with-icon"><a id="copyview-button" title="Copier ce portfolio" href="https://mahara-info.iut-bm.univ-fcomte.fr/view/copy.php?id=2533&amp;collection=346"><span class="icon icon-regular icon-copy left" role="presentation" aria-hidden="true"></span><span class="link-text">Dupliquer</span></a></li>
+
+            
+                <li class="dropdown-item with-icon">
+                    <a id="" title="Gérer l'accès" href="https://mahara-info.iut-bm.univ-fcomte.fr/view/accessurl.php?return=view&amp;id=2533&amp;collection=346">
+                        <span class="icon icon-unlock left" role="presentation" aria-hidden="true"></span><span class="link-text">Gérer l'accès</span>
+                    </a>
+                </li>
+            
+
+            <li class="dropdown-item with-icon">
+                <a title="Imprimer" id="print_link" href="#" onclick="window.print(); return false;">
+                    <span class="icon icon-print left" role="presentation" aria-hidden="true"></span><span class="link-text">Imprimer</span>
+                    <span class="visually-hidden">Imprimer</span>
+                </a>
+            </li>
+
+            
+                
+                
+                
+                
+                
+                <li class="dropdown-item with-icon">
+                    <a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/delete.php?id=2533" title="Supprimer cette page">
+                        <span class="icon icon-trash-alt text-danger left" role="presentation" aria-hidden="true"></span><span class="link-text">Supprimer cette page</span>
+                        <span class="visually-hidden">Supprimer « Troisième année »</span>
+                    </a>
+                </li>
+                
+            
+            
+            
+                <li class="dropdown-item with-icon">
+                  <a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/createversion.php?view=2533">
+                      <span class="icon icon-save left" role="presentation" aria-hidden="true"></span><span class="link-text">Enregistrer dans la chronologie</span>
+                      <span class="visually-hidden">Enregistrer la chronologie pour Troisième année</span>
+                  </a>
+                </li>
+            
+            
+                <li class="dropdown-item with-icon">
+                    <a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/index.php">
+                        <span class="icon icon-layer-group left" aria-hidden="true" role="presentation"></span><span class="link-text">Return to portfolios</span>
+                    </a>
+                </li>
+            
+        </ul>
+    </div>
+</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+    <div class="container main-content">
+        <div class="row">
+            <a id="header-main"></a>
+            <main id="main" class="col-md-12 main">
+                <div id="content" class="main-column">
+                    <div id="main-column-container">
+
+                        
+
+                        <div id="messages" role="alert" aria-live="assertive"></div>
+                        
+
+                        
+
+                        
+
+<div class="modal modal-shown modal-docked-right modal-docked closed blockinstance configure" id="configureblock" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content" data-height=".modal-body">
+            <div class="modal-header">
+                <button class="deletebutton btn-close" name="close_configuration">
+                    <span class="times">×</span>
+                    <span class="visually-hidden">Fermer la configuration</span>
+                </button>
+                <h1 class="modal-title blockinstance-header text-inline"></h1>
+            </div>
+            <div id="modal_messages"></div>
+            <div class="modal-body blockinstance-content">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<input type="hidden" id="viewid" name="id" value="2533">
+
+
+<div id="view" class="view-container">
+    <div id="bottom-pane">
+        <div id="column-container" class="user-page-content"><style type="text/css" gs-style-id="gridstack-style-48126"></style>
+            
+            
+            <div class="grid-stack grid-stack-instance-7291 grid-stack-animate" gs-current-row="324" style="height: 3240px;">
+            
+            <div id="block_13246" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="0" gs-w="12" gs-h="78" gs-min-h="78" gs-id="13246"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_13246">
+        
+        <div class="block-header quick-edit d-none">
+            <a class="quickeditlink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13246" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        </div>
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Aide à l’arbitrage footballistique
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13246_target" data-blocktype-noajax="13246">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p><span style="font-weight:400;">Tout d'abord voici le contexte :</span></p>
+<p><span style="font-weight:400;">La SAÉ consiste à "inventer" une 
+application basée sur des micro-contrôleurs et des objets connectés 
+(téléphones portables, caméra IP) pour collecter des données. Ces 
+données sont soit directement textuelles/numériques, comme c'est souvent
+ le cas avec celles que collectent des micro-contrôleurs grâce à des 
+capteurs, soit au format audio, image, etc qu'il faut traiter pour en 
+tirer de l'information textuelle/numérique. Qu'il y ait ou non 
+traitement, le résultat est stocké dans une base de données non 
+relationnelle, type MongoDB. Une application web front-end faite en 
+VueJS permet ensuite de récupérer des données dans cette BdD (au travers
+ d'une API) et de les visualiser.</span></p>
+<p>Les autres contraintes à respecter sont :</p>
+<ul>
+<li>un serveur multi-threadé de centralisation des données, <strong>écrit en Java et basé sur des sockets TCP.</strong></li>
+<li>ce serveur interagit avec la BdD mongodb de deux façons : la principale est via un <strong>API REST écrite en node</strong>, la secondaire directement via l'A<strong>PI Java pour mongodb</strong>,</li>
+<li>un serveur d'analyse multimédia qui doit être différent du serveur de centralisation des données et qui <strong>ne doit pas</strong> être un serveur web type API REST (cf. ci-dessous)</li>
+<li>la BdD qui centralise les données est forcément <strong>mongodb,</strong></li>
+<li>le front-end se fait avec vuejs, avec des graphiques/stats produits dynamiquement à partir de données de la BdD,</li>
+<li>le développement se fait en utilisant des processus d'intégration continue,</li>
+<li>les serveurs sont déployés sous la forme de conteneurs dockers, 
+produits à la fin du processus d'intégration continue, si possible de 
+façon automatique.</li>
+<li>le fait de versionner + intégration continue se font via les 
+serveurs GitLab et Jenkins du département (NB : ce qui veut dire accès 
+VPN si vous êtes à l'extérieur du réseau fac)</li>
+</ul>
+<p><span style="font-weight:400;">Le sujet concerne l’aide à l’arbitrage
+ dans le monde du football. Et pour répondre aux contraintes, l'idée est
+ de mettre un micro controlleur dans un ballon de football (voir image 
+1) ce qui va permettre de savoir où est la ballon avec précision. Il y a
+ deux cas d'utilisations :<br></span></p>
+<p><strong>Micro-contrôleur</strong> :</p>
+<p><span style="font-weight:400;">Détecter lorsque le ballon sort du terrain dans le but d'aider l'arbitre à prendre la meilleure décision</span>.</p>
+<p><strong>Prise d’une photo (à partir d'un téléphone) : <br></strong></p>
+<p><span style="font-weight:400;">Permet de vérifier à l’aide d’un 
+serveur qui analysera l’image afin de déduire si le ballon est sorti ou 
+non&nbsp; (voir l'image 2).</span><span style="font-weight:400;">&nbsp; </span></p>
+<p>L'objectif du projet est de d<span style="font-weight:400;">étecter 
+lorsque le ballon sort du terrain afin d’aider l'arbitre à prendre la 
+meilleure décision. Les enjeux de ce projet sont un e</span><span style="font-weight:400;">nrichissement personnel et l'acquisition de compétences professionnelles.<br></span></p>
+<p><span style="font-weight:400;">Le projet répond à un besoin, le voici : avoir le moins d’erreur d’arbitrage lors d’un match.</span></p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div><div id="block_13247" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="78" gs-w="8" gs-h="82" gs-min-h="82" gs-id="13247"><div class="grid-stack-item-content "><div class="bt-image gridstackblock card card-secondary  clearfix " id="blockinstance_13247">
+        
+        <div class="block-header d-none details-comments ">
+    
+        
+        <a class="commentlink  " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13247" data-artefactid="6396" title="">
+        
+            
+                <span class="icon icon-plus" role="presentation" aria-hidden="true" title="Commentaires et les détails"></span>
+                Ajouter un commentaire
+                <span class="bh-margin-left icon icon-search-plus" role="presentation" aria-hidden="true"></span>
+                Détails
+            
+        
+        </a>
+    
+</div>
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Structure fonctionnelle
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13247_target" data-blocktype-noajax="13247">
+        
+        
+            <div class="imageblock card-body" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div class="image">
+        
+            <a class="modal_link" data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-artefactid="6396" data-blockid="13247">
+            
+                <img src="saes5s6_fichiers/Structure%20fonctionnelle.png" alt="" itemprop="contentURL" data-bs-target="#configureblock" data-artefactid="6396" data-blockid="13247">
+            
+            </a>
+        
+    </div>
+</div>
+        
+    </div>
+</div>
+</div></div><div id="block_13262" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="160" gs-w="6" gs-h="51" gs-min-h="51" gs-id="13262"><div class="grid-stack-item-content "><div class="bt-image gridstackblock card card-secondary  clearfix " id="blockinstance_13262">
+        
+        <div class="block-header d-none details-comments ">
+    
+        
+        <a class="commentlink  " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13262" data-artefactid="6400" title="">
+        
+            
+                <span class="icon icon-plus" role="presentation" aria-hidden="true" title="Commentaires et les détails"></span>
+                Ajouter un commentaire
+                <span class="bh-margin-left icon icon-search-plus" role="presentation" aria-hidden="true"></span>
+                Détails
+            
+        
+        </a>
+    
+</div>
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Image 1
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13262_target" data-blocktype-noajax="13262">
+        
+        
+            <div class="imageblock card-body" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div class="image">
+        
+            <a class="modal_link" data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-artefactid="6400" data-blockid="13262">
+            
+                <img src="saes5s6_fichiers/capteurballon.png" alt="" itemprop="contentURL" data-bs-target="#configureblock" data-artefactid="6400" data-blockid="13262">
+            
+            </a>
+        
+    </div>
+</div>
+        
+    </div>
+</div>
+</div></div><div id="block_13261" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="6" gs-y="160" gs-w="6" gs-h="49" gs-min-h="49" gs-id="13261"><div class="grid-stack-item-content "><div class="bt-image gridstackblock card card-secondary  clearfix " id="blockinstance_13261">
+        
+        <div class="block-header d-none details-comments ">
+    
+        
+        <a class="commentlink  " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13261" data-artefactid="6398" title="">
+        
+            
+                <span class="icon icon-plus" role="presentation" aria-hidden="true" title="Commentaires et les détails"></span>
+                Ajouter un commentaire
+                <span class="bh-margin-left icon icon-search-plus" role="presentation" aria-hidden="true"></span>
+                Détails
+            
+        
+        </a>
+    
+</div>
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Image 2
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13261_target" data-blocktype-noajax="13261">
+        
+        
+            <div class="imageblock card-body" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div class="image">
+        
+            <a class="modal_link" data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-artefactid="6398" data-blockid="13261">
+            
+                <img src="saes5s6_fichiers/exDecas.png" alt="" itemprop="contentURL" data-bs-target="#configureblock" data-artefactid="6398" data-blockid="13261">
+            
+            </a>
+        
+    </div>
+</div>
+        
+    </div>
+</div>
+</div></div><div id="block_13259" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="6" gs-y="209" gs-w="6" gs-h="52" gs-min-h="52" gs-id="13259"><div class="grid-stack-item-content "><div class="bt-image gridstackblock card card-secondary  clearfix " id="blockinstance_13259">
+        
+        <div class="block-header d-none details-comments ">
+    
+        
+        <a class="commentlink  " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13259" data-artefactid="6397" title="">
+        
+            
+                <span class="icon icon-plus" role="presentation" aria-hidden="true" title="Commentaires et les détails"></span>
+                Ajouter un commentaire
+                <span class="bh-margin-left icon icon-search-plus" role="presentation" aria-hidden="true"></span>
+                Détails
+            
+        
+        </a>
+    
+</div>
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Burn-up chart
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13259_target" data-blocktype-noajax="13259">
+        
+        
+            <div class="imageblock card-body" itemscope="" itemtype="http://schema.org/ImageObject">
+    <div class="image">
+        
+            <a class="modal_link" data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-artefactid="6397" data-blockid="13259">
+            
+                <img src="saes5s6_fichiers/burnupchart.png" alt="" itemprop="contentURL" data-bs-target="#configureblock" data-artefactid="6397" data-blockid="13259">
+            
+            </a>
+        
+    </div>
+</div>
+        
+    </div>
+</div>
+</div></div><div id="block_13248" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="211" gs-w="6" gs-h="62" gs-min-h="62" gs-id="13248"><div class="grid-stack-item-content "><div class="bt-pdf gridstackblock card card-secondary  clearfix " id="blockinstance_13248">
+        
+        <div class="block-header d-none details-comments quick-edit ">
+    
+        
+                <a class="quickeditlink with-displaylink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13248" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        
+        <a class="detailslink with-quickedit modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13248" data-artefactid="6399" title="Détails">
+            <span class="icon icon-search-plus bh-details-only" role="presentation" aria-hidden="true" title="Détails"></span>
+            
+                Détails
+            
+        </a>
+    
+</div>
+
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Diaporama
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13248_target" data-blocktype-noajax="13248">
+        
+        
+            <div class="card-body">
+<iframe allow="fullscreen" src="saes5s6_fichiers/viewer.html" class="pdfiframe"></iframe>
+</div>
+
+        
+    </div>
+</div>
+</div></div><div id="block_13249" class="grid-stack-item ui-draggable-disabled ui-resizable-disabled" gs-x="0" gs-y="273" gs-w="12" gs-h="51" gs-min-h="51" gs-id="13249"><div class="grid-stack-item-content "><div class="bt-text gridstackblock card card-secondary  clearfix " id="blockinstance_13249">
+        
+        <div class="block-header quick-edit d-none">
+            <a class="quickeditlink modal_link list-group-heading " data-bs-toggle="modal-docked" data-bs-target="#configureblock" href="#" data-blockid="13249" title="Édition rapide">
+        <span class="icon icon-pencil-alt" role="presentation" aria-hidden="true" title="Édition rapide"></span>
+        Édition rapide
+    </a>
+
+        </div>
+    
+    
+        <h2 class="title card-header js-heading">
+            
+
+            <span class="collapse-inline">
+                Compétences
+                
+            </span>
+
+            
+
+        </h2>
+    
+
+    <div class="block" id="blockinstance_13249_target" data-blocktype-noajax="13249">
+        
+        
+            
+
+<div class="textblock card-body flush">
+<p>En me référant aux Apprentissages Critiques (AC) du Programme 
+National (PN), j’ai pu développer mes compétences durant ce stage. 
+Plusieurs apprentissages critiques ont été améliorés, notamment l'AC 1, 
+2, 3 et 4 de la compétence 1 (*1), qui consistent à implémenter, 
+élaborer des conceptions simples, Faire des essais et évaluer leurs 
+résultats en regard des spécifications et développer des interfaces 
+utilisateurs. Cela s'est manifesté lors du développement du projet, où, 
+j'ai dû développer une partie de l'interface web, spécialement avec le 
+profil de l'utilisateur, mais aussi lors du développement de 
+l'application mobile afin d'envoyer une photo au serveur d'analyse.<br>Ensuite,
+ la compétence 4 (*2) a été amélioré. En effet, l'utilisation d'une base
+ de données non relationnelle (MongoDB), m'a fait enregistrer des 
+données du micro-contrôleur et aussi envoyer des données depuis la base 
+de données vers l'interface web.<br>Enfin, pour les compétences 5 (*3) 
+et 6 (*4), qui englobe la capacité à conduire un projet ainsi que 
+travailler dans une équipe informatique, ont été améliorées. Travailler 
+au sein d'un groupe de quatre étudiants m’a permis de collaborer avec 
+tous les membres du groupe, ce qui a rendu les échanges essentiels et 
+cela a renforcé mes aptitudes à travailler en équipe et à communiquer. 
+Pour la partie concernant la conduite d'un projet, j'ai su, avec les 
+membres de l'équipe, répartir les tâches selon les compétences de chacun
+ et bien évidemment mettre des délais sur ce qu'on devait faire afin 
+d'être dans les temps.&nbsp; </p>
+<p>*1 &nbsp;Réaliser un développement d’application<br>*2&nbsp; Gérer des données de l’information<br>*3 &nbsp;Conduire un projet<br>*4&nbsp; Collaborer au sein d’une équipe informatique</p>
+</div>
+
+
+        
+    </div>
+</div>
+</div></div></div>
+        </div>
+    </div>
+    <div class="view-container viewfooter">
+        
+
+        
+        <div class="submissionform alert alert-default">
+            <form class="pieform form-inline" name="view_group_submission_form_2533" method="post" id="view_group_submission_form_2533">
+<div id="view_group_submission_form_2533_text1_container" class="text-inline html form-group">Envoyer cette collection pour évaluation à&nbsp;</div>
+<div id="view_group_submission_form_2533_inputgroup_container" class="input-group form-group"><fieldset class="pieform-fieldset input-group">	<div id="view_group_submission_form_2533_options_container" class="select form-group"><span class="picker"><select class="form-control select" id="view_group_submission_form_2533_options" name="options" tabindex="0" style="">
+	<option value="29" selected="selected">info : iut-nfc.formation.info.application.mahara</option>
+	<option value="31">info : iut-nfc.formation.info.application.mahara.etudiants</option>
+	<option value="34">info : iut-nfc.formation.info.application.mahara.etudiants.BUT2</option>
+	<option value="46">info : iut-nfc.formation.info.application.mahara.etudiants.BUT2.BUT2A</option>
+	<option value="48">info : iut-nfc.formation.info.application.mahara.etudiants.BUT2.BUT2A.BUT2A1</option>
+</select></span></div>
+	<div id="view_group_submission_form_2533_submit_container" class=" primary input-group-append button "><button type="submit" class="btn-primary input-group-append button btn" id="view_group_submission_form_2533_submit" name="submit" tabindex="0">Envoyer</button></div>
+</fieldset>
+</div>
+<input type="hidden" class="hidden" id="view_group_submission_form_2533_returnto" name="returnto" value="view">
+<input type="hidden" class="hidden" id="view_group_submission_form_2533_collection" name="collection" value="346">
+<input type="hidden" class="hidden" id="view_group_submission_form_2533_sesskey" name="sesskey" value="2664f85ebefede18">
+<input type="hidden" name="pieform_view_group_submission_form_2533" value="">
+</form>
+<script>new Pieform({"name":"view_group_submission_form_2533","jsForm":false,"submitButtons":["submit"],"preSubmitCallback":"formStartProcessing","jsSuccessCallback":"formSuccess","jsErrorCallback":"formError","globalJsErrorCallback":"formGlobalError","postSubmitCallback":"formStopProcessing","newIframeOnSubmit":false,"checkDirtyChange":true});</script>
+
+        </div>
+        
+
+        
+
+        
+        <div class="comment-container collapsible-group">
+            
+            <fieldset class="pieform-fieldset first last collapsible">
+                <legend>
+                    <button href="#dropdown" data-bs-toggle="collapse" aria-expanded="false" aria-controls="dropdown" class="collapsed">
+                        <span class="icon icon-comments left" role="presentation" aria-hidden="true"></span>
+                        <span id="comment-section-title">Ajouter un commentaire</span>
+                        <span id="comment-section-count" class="text-small"></span>
+                        <span class="icon icon-chevron-down collapse-indicator right float-end" role="presentation" aria-hidden="true"></span>
+                    </button>
+                </legend>
+                <div class="fieldset-body comment-fieldset-body collapse" id="dropdown">
+                    <div id="feedbacktable" class="feedbacktable js-feedbackbase fullwidth">
+                    <!-- The "feedbacktable" class is used as an identifier by Javascript -->
+<div class="list-group list-group-lite list-group-top-border">
+
+</div>
+
+                    </div>
+                    <div id="feedback_pagination" class="pagination-wrapper center"></div>
+                    
+                        <div id="add-comment" class="add-comment-container">
+    <h3 id="add_feedback_heading">
+        <span class="icon icon-comments left" role="presentation" aria-hidden="true"></span>
+        Add your comment
+    </h3>
+    <div class="addcommentform" id="comment-form">
+        <form class="pieform" name="add_feedback_form" method="post" id="add_feedback_form" enctype="multipart/form-data">
+<div id="add_feedback_form_message_container" class="hide-label wysiwyg form-group"><label for="add_feedback_form_message">Envoyer le commentaire</label><textarea rows="5" cols="80" class="hide-label wysiwyg" id="add_feedback_form_message" name="message" tabindex="0" maxlength="1000000" style="display: none;" aria-hidden="true"></textarea><div role="application" class="tox tox-tinymce" style="visibility: hidden; height: 200px;" aria-disabled="false"><div class="tox-editor-container"><div data-alloy-vertical-dir="toptobottom" class="tox-editor-header"><div class="tox-toolbar-overlord"><div role="group" class="tox-toolbar" aria-disabled="false"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Permutter la barre de boutons. Afficher la liste complète des boutons" title="Permutter la barre de boutons. Afficher la liste complète des boutons" type="button" tabindex="-1" class="tox-tbtn flipicon" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="10" height="10" focusable="false"><path d="M8.7 7.8L5 4 1.3 7.8c-.3.3-.8.3-1 0a.8.8 0 010-1.2l4.1-4.4c.3-.3.9-.3 1.2 0l4.2 4.4c.3.3.3.9 0 1.2-.3.3-.8.3-1.1 0z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Blocs" aria-label="Blocs" aria-haspopup="true" type="button" tabindex="-1" unselectable="on" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label">Paragraphe</span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Gras" title="Gras" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7.8 19c-.3 0-.5 0-.6-.2l-.2-.5V5.7c0-.2 0-.4.2-.5l.6-.2h5c1.5 0 2.7.3 3.5 1 .7.6 1.1 1.4 1.1 2.5a3 3 0 01-.6 1.9c-.4.6-1 1-1.6 1.2.4.1.9.3 1.3.6s.8.7 1 1.2c.4.4.5 1 .5 1.6 0 1.3-.4 2.3-1.3 3-.8.7-2.1 1-3.8 1H7.8zm5-8.3c.6 0 1.2-.1 1.6-.5.4-.3.6-.7.6-1.3 0-1.1-.8-1.7-2.3-1.7H9.3v3.5h3.4zm.5 6c.7 0 1.3-.1 1.7-.4.4-.4.6-.9.6-1.5s-.2-1-.7-1.4c-.4-.3-1-.4-2-.4H9.4v3.8h4z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Italique" title="Italique" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M16.7 4.7l-.1.9h-.3c-.6 0-1 0-1.4.3-.3.3-.4.6-.5 1.1l-2.1 9.8v.6c0 .5.4.8 1.4.8h.2l-.2.8H8l.2-.8h.2c1.1 0 1.8-.5 2-1.5l2-9.8.1-.5c0-.6-.4-.8-1.4-.8h-.3l.2-.9h5.8z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Liste à puces" title="Liste à puces" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M11 5h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zM4.5 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1zm0 6c0-.4.1-.8.4-1 .3-.4.7-.5 1.1-.5.4 0 .8.1 1 .4.4.3.5.7.5 1.1 0 .4-.1.8-.4 1-.3.4-.7.5-1.1.5-.4 0-.8-.1-1-.4-.4-.3-.5-.7-.5-1.1z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Liste numérotée" title="Liste numérotée" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M10 17h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0-6h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 110-2zM6 4v3.5c0 .3-.2.5-.5.5a.5.5 0 01-.5-.5V5h-.5a.5.5 0 010-1H6zm-1 8.8l.2.2h1.3c.3 0 .5.2.5.5s-.2.5-.5.5H4.9a1 1 0 01-.9-1V13c0-.4.3-.8.6-1l1.2-.4.2-.3a.2.2 0 00-.2-.2H4.5a.5.5 0 01-.5-.5c0-.3.2-.5.5-.5h1.6c.5 0 .9.4.9 1v.1c0 .4-.3.8-.6 1l-1.2.4-.2.3zM7 17v2c0 .6-.4 1-1 1H4.5a.5.5 0 010-1h1.2c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.4a.4.4 0 110-.8h1.3c.2 0 .3-.1.3-.3 0-.2-.1-.3-.3-.3H4.5a.5.5 0 110-1H6c.6 0 1 .4 1 1z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Insérer/modifier un lien" title="Insérer/modifier un lien" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6.2 12.3a1 1 0 011.4 1.4l-2.1 2a2 2 0 102.7 2.8l4.8-4.8a1 1 0 000-1.4 1 1 0 111.4-1.3 2.9 2.9 0 010 4L9.6 20a3.9 3.9 0 01-5.5-5.5l2-2zm11.6-.6a1 1 0 01-1.4-1.4l2-2a2 2 0 10-2.6-2.8L11 10.3a1 1 0 000 1.4A1 1 0 119.6 13a2.9 2.9 0 010-4L14.4 4a3.9 3.9 0 015.5 5.5l-2 2z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Enlever le lien" title="Enlever le lien" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6.2 12.3a1 1 0 011.4 1.4l-2 2a2 2 0 102.6 2.8l4.8-4.8a1 1 0 000-1.4 1 1 0 111.4-1.3 2.9 2.9 0 010 4L9.6 20a3.9 3.9 0 01-5.5-5.5l2-2zm11.6-.6a1 1 0 01-1.4-1.4l2.1-2a2 2 0 10-2.7-2.8L11 10.3a1 1 0 000 1.4A1 1 0 119.6 13a2.9 2.9 0 010-4L14.4 4a3.9 3.9 0 015.5 5.5l-2 2zM7.6 6.3a.8.8 0 01-1 1.1L3.3 4.2a.7.7 0 111-1l3.2 3.1zM5.1 8.6a.8.8 0 010 1.5H3a.8.8 0 010-1.5H5zm5-3.5a.8.8 0 01-1.5 0V3a.8.8 0 011.5 0V5zm6 11.8a.8.8 0 011-1l3.2 3.2a.8.8 0 01-1 1L16 17zm-2.2 2a.8.8 0 011.5 0V21a.8.8 0 01-1.5 0V19zm5-3.5a.7.7 0 110-1.5H21a.8.8 0 010 1.5H19z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Insérer/modifier une image" title="Insérer/modifier une image" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 15.7l3.3-3.2c.3-.3.7-.3 1 0L12 15l4.1-4c.3-.4.8-.4 1 0l2 1.9V5H5v10.7zM5 18V19h3l2.8-2.9-2-2L5 17.9zm14-3l-2.5-2.4-6.4 6.5H19v-4zM4 3h16c.6 0 1 .4 1 1v16c0 .6-.4 1-1 1H4a1 1 0 01-1-1V4c0-.6.4-1 1-1zm6 8a2 2 0 100-4 2 2 0 000 4z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Annuler" title="Annuler" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6.4 8H12c3.7 0 6.2 2 6.8 5.1.6 2.7-.4 5.6-2.3 6.8a1 1 0 01-1-1.8c1.1-.6 1.8-2.7 1.4-4.6-.5-2.1-2.1-3.5-4.9-3.5H6.4l3.3 3.3a1 1 0 11-1.4 1.4l-5-5a1 1 0 010-1.4l5-5a1 1 0 011.4 1.4L6.4 8z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Rétablir" title="Rétablir" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M17.6 10H12c-2.8 0-4.4 1.4-4.9 3.5-.4 2 .3 4 1.4 4.6a1 1 0 11-1 1.8c-2-1.2-2.9-4.1-2.3-6.8.6-3 3-5.1 6.8-5.1h5.6l-3.3-3.3a1 1 0 111.4-1.4l5 5a1 1 0 010 1.4l-5 5a1 1 0 01-1.4-1.4l3.3-3.3z" fill-rule="nonzero"></path></svg></span></button></div></div><div role="group" class="tox-toolbar d-none" aria-disabled="false"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Souligné" title="Souligné" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M16 5c.6 0 1 .4 1 1v5.5a4 4 0 01-.4 1.8l-1 1.4a5.3 5.3 0 01-5.5 1 5 5 0 01-1.6-1c-.5-.4-.8-.9-1.1-1.4a4 4 0 01-.4-1.8V6c0-.6.4-1 1-1s1 .4 1 1v5.5c0 .3 0 .6.2 1l.6.7a3.3 3.3 0 002.2.8 3.4 3.4 0 002.2-.8c.3-.2.4-.5.6-.8l.2-.9V6c0-.6.4-1 1-1zM8 17h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Barré" title="Barré" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path d="M15.6 8.5c-.5-.7-1-1.1-1.3-1.3-.6-.4-1.3-.6-2-.6-2.7 0-2.8 1.7-2.8 2.1 0 1.6 1.8 2 3.2 2.3 4.4.9 4.6 2.8 4.6 3.9 0 1.4-.7 4.1-5 4.1A6.2 6.2 0 017 16.4l1.5-1.1c.4.6 1.6 2 3.7 2 1.6 0 2.5-.4 3-1.2.4-.8.3-2-.8-2.6-.7-.4-1.6-.7-2.9-1-1-.2-3.9-.8-3.9-3.6C7.6 6 10.3 5 12.4 5c2.9 0 4.2 1.6 4.7 2.4l-1.5 1.1z"></path><path d="M5 11h14a1 1 0 010 2H5a1 1 0 010-2z" fill-rule="nonzero"></path></g></svg></span></button><button aria-label="Indice" title="Indice" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M10.4 10l4.6 4.6-1.4 1.4L9 11.4 4.4 16 3 14.6 7.6 10 3 5.4 4.4 4 9 8.6 13.6 4 15 5.4 10.4 10zM21 19h-5v-1l1-.8 1.7-1.6c.3-.4.5-.8.5-1.2 0-.3 0-.6-.2-.7-.2-.2-.5-.3-.9-.3a2 2 0 00-.8.2l-.7.3-.4-1.1 1-.6 1.2-.2c.8 0 1.4.3 1.8.7.4.4.6.9.6 1.5s-.2 1.1-.5 1.6a8 8 0 01-1.3 1.3l-.6.6h2.6V19z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Exposant" title="Exposant" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M15 9.4L10.4 14l4.6 4.6-1.4 1.4L9 15.4 4.4 20 3 18.6 7.6 14 3 9.4 4.4 8 9 12.6 13.6 8 15 9.4zm5.9 1.6h-5v-1l1-.8 1.7-1.6c.3-.5.5-.9.5-1.3 0-.3 0-.5-.2-.7-.2-.2-.5-.3-.9-.3l-.8.2-.7.4-.4-1.2c.2-.2.5-.4 1-.5.3-.2.8-.2 1.2-.2.8 0 1.4.2 1.8.6.4.4.6 1 .6 1.6 0 .5-.2 1-.5 1.5l-1.3 1.4-.6.5h2.6V11z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Aligner à gauche" title="Aligner à gauche" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Centrer" title="Centrer" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm3 4h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 110-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1H8a1 1 0 010-2zm-3-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Aligner à droite" title="Aligner à droite" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm6 4h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm0 8h8c.6 0 1 .4 1 1s-.4 1-1 1h-8a1 1 0 010-2zm-6-4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Justifier" title="Justifier" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M5 5h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 110-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2zm0 4h14c.6 0 1 .4 1 1s-.4 1-1 1H5a1 1 0 010-2z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Réduire le retrait" title="Réduire le retrait" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--disabled" aria-disabled="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm1.6-3.8a1 1 0 01-1.2 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 011.2 1.6L6.8 12l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Augmenter le retrait" title="Augmenter le retrait" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M7 5h12c.6 0 1 .4 1 1s-.4 1-1 1H7a1 1 0 110-2zm5 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm0 4h7c.6 0 1 .4 1 1s-.4 1-1 1h-7a1 1 0 010-2zm-5 4h12a1 1 0 010 2H7a1 1 0 010-2zm-2.6-3.8L6.2 12l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><div aria-pressed="false" aria-label="Couleur du texte" title="Couleur du texte" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" style="user-select: none;" aria-disabled="false" aria-expanded="false" aria-describedby="aria_9359298462041717785102601"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path id="tox-icon-text-color__color" d="M3 18h18v3H3z" fill="#000000"></path><path d="M8.7 16h-.8a.5.5 0 01-.5-.6l2.7-9c.1-.3.3-.4.5-.4h2.8c.2 0 .4.1.5.4l2.7 9a.5.5 0 01-.5.6h-.8a.5.5 0 01-.4-.4l-.7-2.2c0-.3-.3-.4-.5-.4h-3.4c-.2 0-.4.1-.5.4l-.7 2.2c0 .3-.2.4-.4.4zm2.6-7.6l-.6 2a.5.5 0 00.5.6h1.6a.5.5 0 00.5-.6l-.6-2c0-.3-.3-.4-.5-.4h-.4c-.2 0-.4.1-.5.4z"></path></g></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" style="display: none;" id="aria_9359298462041717785102601">Pour ouvrir la popup, appuyez sur Maj+Entrée</span></div><div aria-pressed="false" aria-label="Couleur d'arrière-plan" title="Couleur d'arrière-plan" role="button" aria-haspopup="true" tabindex="-1" unselectable="on" class="tox-split-button" style="user-select: none;" aria-disabled="false" aria-expanded="false" aria-describedby="aria_7509101422061717785102602"><span role="presentation" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="evenodd"><path id="tox-icon-highlight-bg-color__color" d="M3 18h18v3H3z" fill="#000000"></path><path fill-rule="nonzero" d="M7.7 16.7H3l3.3-3.3-.7-.8L10.2 8l4 4.1-4 4.2c-.2.2-.6.2-.8 0l-.6-.7-1.1 1.1zm5-7.5L11 7.4l3-2.9a2 2 0 012.6 0L18 6c.7.7.7 2 0 2.7l-2.9 2.9-1.8-1.8-.5-.6"></path></g></svg></span></span><span role="presentation" class="tox-tbtn tox-split-button__chevron" aria-disabled="false"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></span><span aria-hidden="true" style="display: none;" id="aria_7509101422061717785102602">Pour ouvrir la popup, appuyez sur Maj+Entrée</span></div></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Gauche à droite" title="Gauche à droite" type="button" tabindex="-1" class="tox-tbtn tox-tbtn--enabled" aria-disabled="false" aria-pressed="true"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M11 5h7a1 1 0 010 2h-1v11a1 1 0 01-2 0V7h-2v11a1 1 0 01-2 0v-6c-.5 0-1 0-1.4-.3A3.4 3.4 0 017.8 10a3.3 3.3 0 010-2.8 3.4 3.4 0 011.8-1.8L11 5zM4.4 16.2L6.2 15l-1.8-1.2a1 1 0 011.2-1.6l3 2a1 1 0 010 1.6l-3 2a1 1 0 11-1.2-1.6z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Droite à gauche" title="Droite à gauche" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M8 5h8v2h-2v12h-2V7h-2v12H8v-7c-.5 0-1 0-1.4-.3A3.4 3.4 0 014.8 10a3.3 3.3 0 010-2.8 3.4 3.4 0 011.8-1.8L8 5zm12 11.2a1 1 0 11-1 1.6l-3-2a1 1 0 010-1.6l3-2a1 1 0 111 1.6L18.4 15l1.8 1.2z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Plein écran" title="Plein écran" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M15.3 10l-1.2-1.3 2.9-3h-2.3a.9.9 0 110-1.7H19c.5 0 .9.4.9.9v4.4a.9.9 0 11-1.8 0V7l-2.9 3zm0 4l3 3v-2.3a.9.9 0 111.7 0V19c0 .5-.4.9-.9.9h-4.4a.9.9 0 110-1.8H17l-3-2.9 1.3-1.2zM10 15.4l-2.9 3h2.3a.9.9 0 110 1.7H5a.9.9 0 01-.9-.9v-4.4a.9.9 0 111.8 0V17l2.9-3 1.2 1.3zM8.7 10L5.7 7v2.3a.9.9 0 01-1.7 0V5c0-.5.4-.9.9-.9h4.4a.9.9 0 010 1.8H7l3 2.9-1.3 1.2z" fill-rule="nonzero"></path></svg></span></button></div></div><div role="group" class="tox-toolbar d-none" aria-disabled="false"><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Polices" aria-label="Polices" aria-haspopup="true" type="button" tabindex="-1" unselectable="on" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label"></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Tailles de police" aria-label="Tailles de police" aria-haspopup="true" type="button" tabindex="-1" unselectable="on" class="tox-tbtn tox-tbtn--select tox-tbtn--bespoke" style="user-select: none;" aria-expanded="false"><span class="tox-tbtn__select-label"></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Emoticônes" title="Emoticônes" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M9 11c.6 0 1-.4 1-1s-.4-1-1-1a1 1 0 00-1 1c0 .6.4 1 1 1zm6 0c.6 0 1-.4 1-1s-.4-1-1-1a1 1 0 00-1 1c0 .6.4 1 1 1zm-3 5.5c2.1 0 4-1.5 4.4-3.5H7.6c.5 2 2.3 3.5 4.4 3.5zM12 4a8 8 0 100 16 8 8 0 000-16zm0 14.5a6.5 6.5 0 110-13 6.5 6.5 0 010 13z" fill-rule="nonzero"></path></svg></span></button><button aria-label="Espace insécable" title="Espace insécable" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M11 11H8a1 1 0 110-2h3V6c0-.6.4-1 1-1s1 .4 1 1v3h3c.6 0 1 .4 1 1s-.4 1-1 1h-3v3c0 .6-.4 1-1 1a1 1 0 01-1-1v-3zm10 4v5H3v-5c0-.6.4-1 1-1s1 .4 1 1v3h14v-3c0-.6.4-1 1-1s1 .4 1 1z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Caractères spéciaux" title="Caractères spéciaux" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M15 18h4l1-2v4h-6v-3.3l1.4-1a6 6 0 001.8-2.9 6.3 6.3 0 00-.1-4.1 5.8 5.8 0 00-3-3.2c-.6-.3-1.3-.5-2.1-.5a5.1 5.1 0 00-3.9 1.8 6.3 6.3 0 00-1.3 6 6.2 6.2 0 001.8 3l1.4.9V20H4v-4l1 2h4v-.5l-2-1L5.4 15A6.5 6.5 0 014 11c0-1 .2-1.9.6-2.7A7 7 0 016.3 6C7.1 5.4 8 5 9 4.5c1-.3 2-.5 3.1-.5a8.8 8.8 0 015.7 2 7 7 0 011.7 2.3 6 6 0 01.2 4.8c-.2.7-.6 1.3-1 1.9a7.6 7.6 0 01-3.6 2.5v.5z" fill-rule="evenodd"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button title="Tableau" aria-label="Tableau" aria-haspopup="true" type="button" tabindex="-1" data-alloy-tabstop="true" unselectable="on" class="tox-tbtn tox-tbtn--select" style="user-select: none;" aria-expanded="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path fill-rule="nonzero" d="M19 4a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6c0-1.1.9-2 2-2h14zM5 14v4h6v-4H5zm14 0h-6v4h6v-4zm0-6h-6v4h6V8zM5 12h6V8H5v4z"></path></svg></span><div class="tox-tbtn__select-chevron"><svg width="10" height="10" focusable="false"><path d="M8.7 2.2c.3-.3.8-.3 1 0 .4.4.4.9 0 1.2L5.7 7.8c-.3.3-.9.3-1.2 0L.2 3.4a.8.8 0 010-1.2c.3-.3.8-.3 1.1 0L5 6l3.7-3.8z" fill-rule="nonzero"></path></svg></div></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Effacer la mise en forme" title="Effacer la mise en forme" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M13.2 6a1 1 0 010 .2l-2.6 10a1 1 0 01-1 .8h-.2a.8.8 0 01-.8-1l2.6-10H8a1 1 0 110-2h9a1 1 0 010 2h-3.8zM5 18h7a1 1 0 010 2H5a1 1 0 010-2zm13 1.5L16.5 18 15 19.5a.7.7 0 01-1-1l1.5-1.5-1.5-1.5a.7.7 0 011-1l1.5 1.5 1.5-1.5a.7.7 0 011 1L17.5 17l1.5 1.5a.7.7 0 01-1 1z" fill-rule="evenodd"></path></svg></span></button><button aria-label="Coller comme texte" title="Coller comme texte" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M18 9V5h-2v1c0 .6-.4 1-1 1H9a1 1 0 01-1-1V5H6v13h3V9h9zM9 20H6a2 2 0 01-2-2V5c0-1.1.9-2 2-2h3.2A3 3 0 0112 1a3 3 0 012.8 2H18a2 2 0 012 2v4h1v12H9v-1zm1.5-9.5v9h9v-9h-9zM12 3a1 1 0 00-1 1c0 .5.4 1 1 1s1-.5 1-1-.4-1-1-1zm0 9h6v2h-.5l-.5-1h-1v4h.8v1h-3.6v-1h.8v-4h-1l-.5 1H12v-2z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Ancre" title="Ancre" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false" aria-pressed="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><path d="M6 4v17l6-4 6 4V4c0-.6-.4-1-1-1H7a1 1 0 00-1 1z" fill-rule="nonzero"></path></svg></span></button></div><div title="" role="toolbar" data-alloy-tabstop="true" tabindex="-1" class="tox-toolbar__group"><button aria-label="Code source" title="Code source" type="button" tabindex="-1" class="tox-tbtn" aria-disabled="false"><span class="tox-icon tox-tbtn__icon-wrap"><svg width="24" height="24" focusable="false"><g fill-rule="nonzero"><path d="M9.8 15.7c.3.3.3.8 0 1-.3.4-.9.4-1.2 0l-4.4-4.1a.8.8 0 010-1.2l4.4-4.2c.3-.3.9-.3 1.2 0 .3.3.3.8 0 1.1L6 12l3.8 3.7zM14.2 15.7c-.3.3-.3.8 0 1 .4.4.9.4 1.2 0l4.4-4.1c.3-.3.3-.9 0-1.2l-4.4-4.2a.8.8 0 00-1.2 0c-.3.3-.3.8 0 1.1L18 12l-3.8 3.7z"></path></g></svg></span></button></div></div></div><div class="tox-anchorbar"></div></div><div class="tox-sidebar-wrap"><div class="tox-edit-area"><iframe id="add_feedback_form_message_ifr" frameborder="0" allowtransparency="true" title="Rich Text Area" class="tox-edit-area__iframe"></iframe></div><div role="complementary" class="tox-sidebar"><div data-alloy-tabstop="true" tabindex="-1" class="tox-sidebar__slider tox-sidebar--sliding-closed" style="width: 0px;"><div class="tox-sidebar__pane-container"></div></div></div></div></div><div class="tox-statusbar"><div class="tox-statusbar__text-container"><div role="navigation" data-alloy-tabstop="true" class="tox-statusbar__path" aria-disabled="false"></div><button type="button" tabindex="-1" data-alloy-tabstop="true" class="tox-statusbar__wordcount">0 mots</button></div><div title="Redimensionner" data-alloy-tabstop="true" tabindex="-1" class="tox-statusbar__resize-handle"><svg width="10" height="10" focusable="false"><g fill-rule="nonzero"><path d="M8.1 1.1A.5.5 0 119 2l-7 7A.5.5 0 111 8l7-7zM8.1 5.1A.5.5 0 119 6l-3 3A.5.5 0 115 8l3-3z"></path></g></svg></div></div><div aria-hidden="true" class="tox-throbber" style="display: none;"></div></div></div>
+<div id="add_feedback_form_ispublic_container" class="switchbox form-group"><label for="add_feedback_form_ispublic">Commentaire public</label><div class="form-switch ">
+    <div class="switch " style="width: 73px;">
+        <input type="checkbox" class="switchbox" id="add_feedback_form_ispublic" name="ispublic" tabindex="0" aria-label="Commentaire public" checked="checked">
+
+        <label class="switch-label" for="add_feedback_form_ispublic" aria-hidden="true">
+            <span class="switch-inner"></span>
+            <span class="switch-indicator"></span>
+            <span class="state-label on">Oui</span>
+            <span class="state-label off">Non</span>
+        </label>
+    </div>
+    <script>
+        if (!window.Switchbox) {
+            jQuery.getScript("https://mahara-info.iut-bm.univ-fcomte.fr/js/switchbox.js").done(function () { Switchbox.computeWidth("add_feedback_form_ispublic"); });
+        }
+        else {
+            Switchbox.computeWidth("add_feedback_form_ispublic");
+        }
+    </script>
+</div>
+</div>
+<div id="add_feedback_form_attachments_container" class="files form-group"><span class="pseudolabel">Joindre un fichier</span><script>
+    var add_feedback_form_attachments_current = 0;
+    var add_feedback_form_attachments_newrefinput;
+    var add_feedback_form_attachments_newref;
+    var add_feedback_form_attachments_accept = "";
+
+    function add_feedback_form_attachments_new() {
+        add_feedback_form_attachments_current++;
+        var id = 'add_feedback_form_attachments_files_' + add_feedback_form_attachments_current;
+        add_feedback_form_attachments_newlabel = jQuery('<label>', {'for': id, 'class': 'visually-hidden'}).append(jQuery('#add_feedback_form_attachments_files_label').html());
+        add_feedback_form_attachments_newrefinput = jQuery('<input>', {'type': 'file', 'id': id, 'name': id, 'class': 'file', 'accept': add_feedback_form_attachments_accept });
+        add_feedback_form_attachments_newmaxsize = jQuery('<span>', {'id': id, 'class': 'file-description text-small text-midtone'}).append(jQuery('#add_feedback_form_attachments_files_maxsize').html());
+
+        var add_feedback_form_attachments_newref = jQuery('<div>', {'class': 'file-wrapper'}).append(add_feedback_form_attachments_newlabel, add_feedback_form_attachments_newrefinput, add_feedback_form_attachments_newmaxsize);
+
+        jQuery('#add_feedback_form_attachments_list').append(add_feedback_form_attachments_newref);
+
+        add_feedback_form_attachments_newrefinput.trigger("focus");
+    }
+</script>
+<div id="add_feedback_form_attachments_list">
+    
+    <input type="hidden" name="MAX_FILE_SIZE" value="2097152">
+    
+    <div class="file-wrapper">
+        <label id="add_feedback_form_attachments_files_label" class="accessible-hidden visually-hidden" for="add_feedback_form_attachments_files_0">Joindre un fichier</label>
+        <input type="file" id="add_feedback_form_attachments_files_0" name="add_feedback_form_attachments_files_0">
+        <span id="add_feedback_form_attachments_files_maxsize" class="file-description text-small text-midtone">(Taille maximale de dépôt de fichiers 2Mo)</span>
+    </div>
+</div>
+<button class="btn btn-secondary btn-sm" type="button" href="" onclick="add_feedback_form_attachments_new(); return false;">
+    <span class="icon icon-plus left" role="presentation" aria-hidden="true"></span>
+    <span class="">Ajouter une pièce jointe</span>
+</button>
+</div>
+<div id="add_feedback_form_submit_container" class="submitcancel form-group"><button type="submit" class="submitcancel submit btn-primary btn" id="add_feedback_form_submit" name="submit" tabindex="0">Envoyer le commentaire</button> <input type="submit" class="submitcancel cancel" id="cancel_add_feedback_form_submit" name="cancel_submit" tabindex="0" value="Annuler"></div>
+<div id="add_feedback_form_replytoview_container" class="last html form-group"><div class="commentreplyview feedbacktable">
+    <div class="d-none replyto" id="comment_reply_parent">
+        <h3>Répondre à :</h3>
+    </div>
+</div>
+<div class="d-none add_feedback_form_forcepublic_message add_feedback_form_privacy_message">
+    Public
+</div>
+<div class="d-none add_feedback_form_forceprivate_message add_feedback_form_privacy_message">
+    Privé : Cette réponse ne sera visible que de vous et de l'auteur du commentaire précédent.
+</div>
+</div>
+<input type="hidden" class="hidden" id="add_feedback_form_replyto" name="replyto" value="">
+<input type="hidden" class="hidden" id="add_feedback_form_sesskey" name="sesskey" value="2664f85ebefede18">
+<input type="hidden" name="pieform_add_feedback_form" value="">
+</form>
+<script>new Pieform({"name":"add_feedback_form","jsForm":true,"submitButtons":["submit"],"preSubmitCallback":"formStartProcessing","jsSuccessCallback":"addFeedbackSuccess","jsErrorCallback":"addFeedbackError","globalJsErrorCallback":"formGlobalError","postSubmitCallback":"formStopProcessing","newIframeOnSubmit":false,"checkDirtyChange":true});</script>
+
+    </div>
+</div>
+
+                    
+                </div>
+            </fieldset>
+            
+        </div>
+        
+        
+
+        
+        <div class="modal fade" id="report-form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">×</span></button>
+                        <h1 class="modal-title">
+                            <span class="icon icon-flag text-danger left" role="presentation" aria-hidden="true"></span>
+                            Signaler du contenu répréhensible
+                        </h1>
+                    </div>
+                    <div class="modal-body">
+                        <form class="pieform" name="objection_form" method="post" id="objection_form">
+<div class="form-group requiredmarkerdesc">Les rubriques avec un « * » doivent être saisies.</div><div id="objection_form_message_container" class="under-label required textarea form-group"><label for="objection_form_message">Plainte <span class="requiredmarker">*</span></label><textarea rows="5" cols="80" class="form-control under-label required textarea resizable" id="objection_form_message" name="message" tabindex="0" aria-required="true"></textarea></div>
+<div id="objection_form_submit_container" class="submitcancel form-group"><button type="submit" class="submitcancel submit btn-secondary btn" data-confirm="Voulez-vous réellement signaler du contenu répréhensible sur cette page ?" id="objection_form_submit" name="submit" tabindex="0">Informer l'administrateur</button> <input type="submit" class="submitcancel cancel" id="cancel_objection_form_submit" name="cancel_submit" tabindex="0" value="Annuler"></div>
+<input type="hidden" class="hidden" id="objection_form_sesskey" name="sesskey" value="2664f85ebefede18">
+<input type="hidden" name="pieform_objection_form" value="">
+</form>
+<script>new Pieform({"name":"objection_form","jsForm":true,"submitButtons":["submit"],"preSubmitCallback":"formStartProcessing","jsSuccessCallback":"objectionSuccess","jsErrorCallback":"formError","globalJsErrorCallback":"formGlobalError","postSubmitCallback":"formStopProcessing","newIframeOnSubmit":false,"checkDirtyChange":true});</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="review-form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">×</span></button>
+                        <h1 class="modal-title">
+                            <span class="icon icon-flag text-danger left" role="presentation" aria-hidden="true"></span>
+                            Révision des annonces de contenu répréhensible
+                        </h1>
+                    </div>
+                    <div class="modal-body">
+                        <form class="pieform" name="review_form" method="post" id="review_form">
+<div class="form-group requiredmarkerdesc">Les rubriques avec un « * » doivent être saisies.</div><div id="review_form_message_container" class="under-label required textarea form-group"><label for="review_form_message">Message <span class="requiredmarker">*</span></label><textarea rows="5" cols="80" class="form-control under-label required textarea resizable" id="review_form_message" name="message" tabindex="0" aria-required="true"></textarea></div>
+<div id="review_form_submit_container" class="submitcancel form-group"><button type="submit" class="submitcancel submit btn-secondary btn" data-confirm="Êtes-vous certain d'avoir effectuer toutes les modifications adéquates avant que l'administrateur ne révise à nouveau votre page ?" id="review_form_submit" name="submit" tabindex="0">Informer l'administrateur</button> <input type="submit" class="submitcancel cancel" id="cancel_review_form_submit" name="cancel_submit" tabindex="0" value="Annuler"></div>
+<input type="hidden" class="hidden" id="review_form_sesskey" name="sesskey" value="2664f85ebefede18">
+<input type="hidden" name="pieform_review_form" value="">
+</form>
+<script>new Pieform({"name":"review_form","jsForm":true,"submitButtons":["submit"],"preSubmitCallback":"formStartProcessing","jsSuccessCallback":"reviewSuccess","jsErrorCallback":"formError","globalJsErrorCallback":"formGlobalError","postSubmitCallback":"formStopProcessing","newIframeOnSubmit":false,"checkDirtyChange":true});</script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="modal fade" id="copyview-form">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"><span aria-hidden="true">×</span></button>
+                        <h1 class="modal-title">
+                            <span class="icon icon-flag text-danger left" role="presentation" aria-hidden="true"></span>
+                            Confirmer la copie
+                        </h1>
+                    </div>
+                    <div class="modal-body">
+                        <p>Veuillez sélectionner la destination de la copie :</p>
+                        <div class="btn-group">
+                            <button id="copy-collection-button" type="button" class="btn btn-secondary"><span class="icon icon-folder-open" role="presentation" aria-hidden="true"></span> Collection</button>
+                            <button id="copy-view-button" type="button" class="btn btn-secondary"><span class="icon icon-regular icon-file-alt" role="presentation" aria-hidden="true"></span> Page</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="metadata text-end last-updated">
+    Mis à jour le 07 juin 2024, 20:29
+</div>
+
+
+
+                    </div><!-- end main-column -->
+
+                </div><!-- mainmiddle -->
+
+            </main>
+
+            
+
+            
+
+        </div><!-- row -->
+
+    </div><!-- container -->
+
+<footer class="footer">
+    <div class="footer-inner container">
+        <div id="powered-by" class="float-start mahara-logo">
+            <a href="https://mahara.org/">
+                <img src="saes5s6_fichiers/powered_by_mahara.png" alt="Powered by Mahara" class="mahara-footer-logo">
+            </a>
+        </div>
+        <!-- This site is powered by Mahara, an Open Source
+        ePortfolio system. See https://mahara.org/ for more
+        details.
+        NOTE: this image and link are a way that you can
+        support the Mahara project. Please consider
+        displaying them on your site to spread the word! -->
+        <ul class="nav nav-pills footer-nav float-start">
+        
+            <li>
+                
+                <a href="https://mahara-info.iut-bm.univ-fcomte.fr/account/userprivacy.php" class="nav-link">Informations légales</a>
+                
+            </li>
+        
+            <li>
+                
+                <a href="https://mahara-info.iut-bm.univ-fcomte.fr/about.php" class="nav-link">À propos</a>
+                
+            </li>
+        
+            <li>
+                
+                <a href="https://mahara-info.iut-bm.univ-fcomte.fr/contact.php" class="nav-link">Contact</a>
+                
+            </li>
+        
+            <li>
+                
+                <a id="footerhelp" class="nav-link" href="https://manual.mahara.org/fr/22.10/portfolio/pages.html#overview-page">Aide</a>
+                
+            </li>
+        
+        </ul>
+        <div class="metadata float-end mahara-version" id="version">
+            
+        </div>
+
+        <div class="metadata fullwidth site-performace">
+            <!-- there is a div id="performance-info" wrapping this -->
+            
+        </div>
+    </div>
+</footer><!-- footer-wrap -->
+
+
+
+
+<div class="tox tox-silver-sink tox-tinymce-aux" style="position: relative;"></div></body></html>
