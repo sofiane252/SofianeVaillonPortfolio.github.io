@@ -58,7 +58,7 @@
         var showcommentid = '';
 
         jQuery(function () {
-            paginator = new Paginator("feedback_pagination", "feedbacktable", null, "artefact\/comment\/comments.json.php", {"view":170});
+            let paginator = new Paginator("feedback_pagination", "feedbacktable", null, "artefact\/comment\/comments.json.php", {"view":170});
         });
 
         jQuery(window).on('blocksloaded', {}, function() {
